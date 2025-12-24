@@ -1,0 +1,101 @@
+{
+  "country": "spain",
+  "gender": "female",
+  "first_name": "Natalia",
+  "surnames": [
+    "Durán",
+    "Oliva"
+  ],
+  "full_name": "Natalia Durán Oliva",
+  "date_of_birth": "02/01/1990",
+  "age": 35,
+  "city": "Zuera",
+  "nearby_town": "Zaragoza",
+  "postal_code": "50800",
+  "job": "Stock Clerk",
+  "hobbies": [
+    "Cycling",
+    "Attending corridas de toros",
+    "Skateboarding",
+    "Podcast listening",
+    "Podcasting"
+  ],
+  "phone": "+34 765 68 71 08",
+  "height_cm": 165,
+  "weight_kg": 62,
+  "hair_color": "Brown",
+  "eye_color": "Brown",
+  "skin_tone": "Light",
+  "email": "ndura@einrot.com",
+  "website": "None",
+  "religion": "Catholic",
+  "email_status": "Inactivated",
+  "previous_job": null,
+  "social_class": "low",
+  "salary": 20950,
+  "previous_salary": null,
+  "education": "Primary school",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    }
+  ],
+  "work_experience": {
+    "current_job": "Stock Clerk",
+    "start_date": "01/12/2019",
+    "previous_positions": [
+      {
+        "job": "Cashier",
+        "start_date": "01/12/2008",
+        "end_date": "01/12/2019",
+        "termination_reason": "Family reasons"
+      }
+    ]
+  },
+  "family": {
+    "marital_status": "Boyfriend",
+    "partner": {
+      "name": "David",
+      "surname": "Quesada Antón",
+      "gender": "male",
+      "surnames": [
+        "Quesada",
+        "Antón"
+      ],
+      "deceased": false,
+      "birth_date": "08/04/1989",
+      "current_age": 36,
+      "start_date": "21/04/2022",
+      "marriage_date": null
+    },
+    "ex_partner": null,
+    "ex_partners": [],
+    "relationship_history": [],
+    "father": {
+      "name": "Enrique",
+      "surname": "Durán Soria",
+      "deceased": false,
+      "birth_date": "28/04/1946",
+      "current_age": 79
+    },
+    "mother": {
+      "name": "Mercedes",
+      "surname": "Oliva Gutiérrez",
+      "deceased": false,
+      "birth_date": "13/09/1960",
+      "current_age": 65
+    },
+    "siblings": [],
+    "children": []
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [
+    "Experienced the 2008 economic crisis",
+    "Grew up with the Peseta currency (pre-Euro)",
+    "Lived through the Spanish housing bubble"
+  ],
+  "status": "created",
+  "notes": []
+}

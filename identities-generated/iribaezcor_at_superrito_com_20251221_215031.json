@@ -1,0 +1,28 @@
+{
+  "country": "spain",
+  "gender": "female",
+  "first_name": "Iris",
+  "surnames": [
+    "Baeza",
+    "Córdoba"
+  ],
+  "full_name": "Iris Baeza Córdoba",
+  "date_of_birth": "27/05/1999",
+  "age": 26,
+  "city": "Madrid",
+  "nearby_town": "Alcobendas",
+  "job": "Psychiatric nurse",
+  "hobbies": [
+    "Wine tasting",
+    "Painting"
+  ],
+  "phone": "+34 798 55 01 91",
+  "height_cm": 159,
+  "weight_kg": 76,
+  "hair_color": "Black",
+  "eye_color": "Brown",
+  "skin_tone": "Medium",
+  "email": "iribaezcor@superrito.com",
+  "website": "colecristotorrijos.es",
+  "email_status": "Inactivated"
+}

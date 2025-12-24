@@ -1,0 +1,43 @@
+# Reasons for job termination/change
+# Format: Reason
+# Used for previous jobs when person changed employment
+
+# Voluntary reasons (positive/neutral)
+Better job opportunity
+Career advancement
+Relocation
+Pursuing further education
+Starting own business
+Family reasons
+Salary increase elsewhere
+Career change
+Seeking new challenges
+
+# Company-related reasons (neutral)
+Company restructuring
+Company closure
+Department elimination
+Contract ended
+Temporary position ended
+Project completion
+Company relocation
+Merger or acquisition
+
+# Neutral/circumstantial
+End of internship
+Seasonal work ended
+Fixed-term contract expired
+Moved to different city
+Health reasons
+Retirement (for elderly)
+
+# For students/interns
+Internship program completed
+Returned to studies
+Graduated and found full-time position
+
+# Economic reasons
+Economic crisis layoff
+Position eliminated
+Cost-cutting measures
+Business downturn

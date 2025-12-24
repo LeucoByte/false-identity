@@ -1,0 +1,200 @@
+{
+  "country": "spain",
+  "gender": "female",
+  "first_name": "Celia",
+  "surnames": [
+    "Cordero",
+    "Velasco"
+  ],
+  "full_name": "Celia Cordero Velasco",
+  "date_of_birth": "07/01/1969",
+  "age": 56,
+  "city": "Adeje",
+  "nearby_town": "Santa Cruz de Tenerife",
+  "postal_code": "38670",
+  "job": "Bank Teller",
+  "hobbies": [
+    "Spanish cuisine",
+    "Following Athletic Bilbao",
+    "Pilates"
+  ],
+  "phone": "+34 637 51 47 13",
+  "height_cm": 157,
+  "weight_kg": 53,
+  "hair_color": "Black",
+  "eye_color": "Dark Brown",
+  "skin_tone": "Light",
+  "email": "corderocelia@superrito.com",
+  "website": "None",
+  "religion": "Catholic",
+  "email_status": "Inactivated",
+  "previous_job": "Social Worker",
+  "social_class": "middle",
+  "salary": 33600,
+  "previous_salary": null,
+  "education": "Secondary education",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    },
+    {
+      "language": "French",
+      "level": "Basic",
+      "certification": "None"
+    }
+  ],
+  "work_experience": {
+    "current_job": "Bank Teller",
+    "start_date": "01/11/2006",
+    "previous_positions": [
+      {
+        "job": "Social Worker",
+        "start_date": "01/03/1994",
+        "end_date": "01/11/2006",
+        "termination_reason": "Business downturn"
+      }
+    ]
+  },
+  "family": {
+    "marital_status": "Divorced",
+    "partner": null,
+    "ex_partner": {
+      "name": "José Luis",
+      "surname": "Maldonado Díaz",
+      "gender": "male",
+      "surnames": [
+        "Maldonado",
+        "Díaz"
+      ],
+      "deceased": true,
+      "marriage_date": "08/06/2003",
+      "end_date": "17/11/2007",
+      "duration": 4,
+      "divorce_cause": "Death of spouse (Heart attack)",
+      "marriage_number": 1,
+      "birth_date": "26/10/1965",
+      "death_date": "15/12/1999",
+      "age_at_death": 34,
+      "cause_of_death": "Heart attack"
+    },
+    "ex_partners": [
+      {
+        "name": "José Luis",
+        "surname": "Maldonado Díaz",
+        "gender": "male",
+        "surnames": [
+          "Maldonado",
+          "Díaz"
+        ],
+        "deceased": true,
+        "marriage_date": "08/06/2003",
+        "end_date": "17/11/2007",
+        "duration": 4,
+        "divorce_cause": "Death of spouse (Heart attack)",
+        "marriage_number": 1,
+        "birth_date": "26/10/1965",
+        "death_date": "15/12/1999",
+        "age_at_death": 34,
+        "cause_of_death": "Heart attack"
+      }
+    ],
+    "relationship_history": [
+      {
+        "name": "Andrés",
+        "surname": "Alcalde Giménez",
+        "gender": "male",
+        "surnames": [
+          "Alcalde",
+          "Giménez"
+        ],
+        "birth_date": "21/02/1964",
+        "current_age": 61,
+        "start_date": "04/12/2010",
+        "end_date": "28/06/2015",
+        "duration": 5,
+        "breakup_reason": "Financial disagreements"
+      }
+    ],
+    "father": {
+      "name": "Celestino",
+      "surname": "Cordero Macias",
+      "deceased": false,
+      "birth_date": "18/12/1944",
+      "current_age": 81
+    },
+    "mother": {
+      "name": "Esperanza",
+      "surname": "Velasco Córdoba",
+      "deceased": true,
+      "birth_date": "27/01/1948",
+      "death_date": "01/09/2019",
+      "age_at_death": 71,
+      "cause_of_death": "Pneumonia"
+    },
+    "siblings": [
+      {
+        "name": "María Isabel",
+        "surname": "Cordero Velasco",
+        "gender": "female",
+        "surnames": [
+          "Cordero",
+          "Velasco"
+        ],
+        "deceased": false,
+        "birth_date": "04/06/1978",
+        "current_age": 47
+      },
+      {
+        "name": "Remedios",
+        "surname": "Cordero Velasco",
+        "gender": "female",
+        "surnames": [
+          "Cordero",
+          "Velasco"
+        ],
+        "deceased": false,
+        "birth_date": "27/08/1976",
+        "current_age": 49
+      }
+    ],
+    "children": [
+      {
+        "name": "Ana",
+        "surname": "Maldonado Cordero",
+        "gender": "female",
+        "surnames": [
+          "Maldonado",
+          "Cordero"
+        ],
+        "deceased": false,
+        "birth_date": "21/11/2003",
+        "current_age": 22,
+        "from_marriage": 1
+      },
+      {
+        "name": "Emilio",
+        "surname": "Maldonado Cordero",
+        "gender": "male",
+        "surnames": [
+          "Maldonado",
+          "Cordero"
+        ],
+        "deceased": false,
+        "birth_date": "11/12/2005",
+        "current_age": 20,
+        "from_marriage": 1
+      }
+    ]
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [
+    "Witnessed the Spanish transition to democracy",
+    "Lived through the 1992 Barcelona Olympics era",
+    "Witnessed Spain joining the European Union (1986)",
+    "Remembers the 2004 Madrid train bombings"
+  ],
+  "status": "created",
+  "notes": []
+}

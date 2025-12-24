@@ -1,0 +1,30 @@
+Teacher
+Police Officer
+Firefighter
+Electrician
+Plumber
+Carpenter
+Mechanic
+Nurse
+Technician
+Sales Representative
+Accountant
+Office Manager
+Store Manager
+Insurance Agent
+Real Estate Agent
+Chef
+Bank Teller
+Administrative Assistant
+Customer Service Manager
+IT Support Specialist
+Web Developer
+Graphic Designer
+Photographer
+Sound Technician
+Paramedic
+Dental Hygienist
+Laboratory Technician
+Postal Worker
+Flight Attendant
+Social Worker

@@ -1,0 +1,34 @@
+{
+  "job_categories": {
+    "legal": ["Lawyer", "Judge", "Legal Assistant", "Paralegal", "Attorney"],
+    "medical": ["Doctor", "Surgeon", "Nurse", "Dentist", "Pharmacist", "Medical Assistant", "Paramedic"],
+    "education": ["Teacher", "Professor", "School Principal", "Tutor", "Teaching Assistant"],
+    "technology": ["Software Engineer", "IT Support", "Web Developer", "Data Analyst", "System Administrator", "Network Engineer"],
+    "business": ["Accountant", "Financial Analyst", "Business Consultant", "Marketing Manager", "Sales Manager", "HR Manager"],
+    "service": ["Waiter", "Bartender", "Chef", "Cook", "Cashier", "Receptionist", "Customer Service Representative"],
+    "construction": ["Construction Worker", "Electrician", "Plumber", "Carpenter", "Architect", "Civil Engineer"],
+    "retail": ["Sales Associate", "Store Manager", "Retail Assistant", "Merchandiser"],
+    "transportation": ["Taxi Driver", "Truck Driver", "Bus Driver", "Delivery Driver", "Logistics Coordinator"],
+    "creative": ["Graphic Designer", "Writer", "Journalist", "Photographer", "Artist", "Video Editor"],
+    "government": ["Police Officer", "Firefighter", "Civil Servant", "Military Personnel", "Border Guard"],
+    "hospitality": ["Hotel Manager", "Concierge", "Housekeeper", "Event Coordinator"],
+    "manufacturing": ["Factory Worker", "Machine Operator", "Quality Control Inspector", "Production Supervisor"],
+    "agriculture": ["Farmer", "Agricultural Worker", "Veterinarian", "Agricultural Technician"],
+    "science": ["Scientist", "Researcher", "Lab Technician", "Chemist", "Biologist"]
+  },
+  "typical_transitions": {
+    "Student": ["any_entry_level"],
+    "Unemployed": ["same_or_lower"],
+    "entry_level": ["same_category_higher", "related_category"],
+    "mid_level": ["same_category_higher", "same_category_similar"],
+    "senior_level": ["same_category_senior", "management"]
+  },
+  "incompatible_transitions": [
+    ["Doctor", "Construction Worker"],
+    ["Lawyer", "Factory Worker"],
+    ["Judge", "Waiter"],
+    ["Surgeon", "Taxi Driver"],
+    ["Professor", "Cashier"],
+    ["Civil Engineer", "Bartender"]
+  ]
+}

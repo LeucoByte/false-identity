@@ -1,0 +1,30 @@
+{
+  "country": "russia",
+  "gender": "female",
+  "first_name": "Оксана",
+  "surnames": [
+    "Рогов"
+  ],
+  "full_name": "Оксана Рогов",
+  "date_of_birth": "16.04.1979",
+  "age": 46,
+  "city": "Уфа",
+  "nearby_town": "Кумертау",
+  "job": "Baker",
+  "hobbies": [
+    "Salsa dancing",
+    "Self-care",
+    "Cycling",
+    "Pottery",
+    "Thrifting"
+  ],
+  "phone": "+7 (901) 981-39-91",
+  "height_cm": 166,
+  "weight_kg": 59,
+  "hair_color": "Blonde",
+  "eye_color": "Green",
+  "skin_tone": "Light",
+  "email": "x@armyspy.com",
+  "website": "wikipedia.com",
+  "email_status": "Inactivated"
+}

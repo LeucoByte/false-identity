@@ -1,0 +1,128 @@
+{
+  "country": "spain",
+  "gender": "male",
+  "first_name": "Nil",
+  "surnames": [
+    "Vicente",
+    "de la Fuente"
+  ],
+  "full_name": "Nil Vicente de la Fuente",
+  "date_of_birth": "29/12/2004",
+  "age": 20,
+  "city": "Siero",
+  "nearby_town": "Gijón",
+  "postal_code": "33510",
+  "job": "Unemployed",
+  "hobbies": [
+    "Following Sevilla FC",
+    "Beach volleyball",
+    "Playing guitar",
+    "Card games",
+    "Scootering"
+  ],
+  "phone": "+34 780 24 73 53",
+  "height_cm": 163,
+  "weight_kg": 60,
+  "hair_color": "Dark Brown",
+  "eye_color": "Brown",
+  "skin_tone": "Light",
+  "email": "vicentenil@fleckens.hu",
+  "website": "None",
+  "religion": "Agnostic",
+  "email_status": "Inactivated",
+  "previous_job": "Postal Worker",
+  "social_class": "middle",
+  "salary": null,
+  "previous_salary": 30400,
+  "education": "Secondary education",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    },
+    {
+      "language": "English",
+      "level": "Intermediate",
+      "certification": "None"
+    }
+  ],
+  "work_experience": {
+    "current_job": "Unemployed",
+    "start_date": null,
+    "months_unemployed": 3,
+    "previous_positions": [
+      {
+        "job": "Postal Worker",
+        "start_date": "01/12/2015",
+        "end_date": "01/04/2024",
+        "termination_reason": "Position eliminated"
+      }
+    ]
+  },
+  "family": {
+    "marital_status": "Girlfriend",
+    "partner": {
+      "name": "Nora",
+      "surname": "Córdoba Carrillo",
+      "gender": "female",
+      "surnames": [
+        "Córdoba",
+        "Carrillo"
+      ],
+      "deceased": false,
+      "birth_date": "14/09/2003",
+      "current_age": 22,
+      "start_date": "28/03/2024",
+      "marriage_date": null
+    },
+    "ex_partner": null,
+    "ex_partners": [],
+    "relationship_history": [],
+    "father": {
+      "name": "Alberto",
+      "surname": "Vicente Gómez",
+      "deceased": false,
+      "birth_date": "17/02/1975",
+      "current_age": 50
+    },
+    "mother": {
+      "name": "Ana",
+      "surname": "de la Fuente Mora",
+      "deceased": false,
+      "birth_date": "11/03/1965",
+      "current_age": 60
+    },
+    "siblings": [
+      {
+        "name": "Alejandro",
+        "surname": "Vicente de la Fuente",
+        "gender": "male",
+        "surnames": [
+          "Vicente",
+          "de la Fuente"
+        ],
+        "deceased": false,
+        "birth_date": "10/04/1993",
+        "current_age": 32
+      },
+      {
+        "name": "Gael",
+        "surname": "Vicente de la Fuente",
+        "gender": "male",
+        "surnames": [
+          "Vicente",
+          "de la Fuente"
+        ],
+        "deceased": false,
+        "birth_date": "22/06/1994",
+        "current_age": 31
+      }
+    ],
+    "children": []
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [],
+  "status": "created",
+  "notes": []
+}

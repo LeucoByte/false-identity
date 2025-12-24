@@ -1,0 +1,120 @@
+{
+  "country": "spain",
+  "gender": "female",
+  "first_name": "Marta",
+  "surnames": [
+    "Cervantes",
+    "Soria"
+  ],
+  "full_name": "Marta Cervantes Soria",
+  "date_of_birth": "31/12/1998",
+  "age": 26,
+  "city": "Las Rozas de Madrid",
+  "nearby_town": "Madrid",
+  "postal_code": "28230",
+  "job": "Jobless",
+  "hobbies": [
+    "Wine tasting at bodegas",
+    "Paella cooking",
+    "Playing guitar",
+    "Reading",
+    "Volleyball"
+  ],
+  "phone": "+34 700 35 28 57",
+  "height_cm": 162,
+  "weight_kg": 55,
+  "hair_color": "Dark Brown",
+  "eye_color": "Brown",
+  "skin_tone": "Medium",
+  "email": "martacervantes@cuvox.de",
+  "website": "None",
+  "religion": "Catholic",
+  "email_status": "Inactivated",
+  "previous_job": null,
+  "social_class": "low",
+  "salary": null,
+  "previous_salary": null,
+  "education": "Bachelor's degree (in progress)",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    },
+    {
+      "language": "English",
+      "level": "Intermediate",
+      "certification": "None"
+    },
+    {
+      "language": "Galician",
+      "level": "Intermediate",
+      "certification": "None"
+    }
+  ],
+  "work_experience": {
+    "current_job": null,
+    "start_date": null,
+    "previous_positions": [
+      {
+        "job": "Intern - Design",
+        "start_date": "01/04/2024",
+        "end_date": "01/08/2024",
+        "termination_reason": "Internship program completed"
+      }
+    ]
+  },
+  "family": {
+    "marital_status": "Married",
+    "partner": {
+      "name": "Nil",
+      "surname": "Carmona Gamboa",
+      "gender": "male",
+      "surnames": [
+        "Carmona",
+        "Gamboa"
+      ],
+      "deceased": false,
+      "birth_date": "25/05/2000",
+      "current_age": 25,
+      "start_date": "10/05/2023",
+      "marriage_date": "10/05/2023"
+    },
+    "ex_partner": null,
+    "ex_partners": [],
+    "relationship_history": [],
+    "father": {
+      "name": "Carlos",
+      "surname": "Cervantes de la Torre",
+      "deceased": false,
+      "birth_date": "25/07/1959",
+      "current_age": 66
+    },
+    "mother": {
+      "name": "Alicia",
+      "surname": "Soria Lorenzo",
+      "deceased": false,
+      "birth_date": "13/07/1974",
+      "current_age": 51
+    },
+    "siblings": [
+      {
+        "name": "Triana",
+        "surname": "Cervantes Soria",
+        "gender": "female",
+        "surnames": [
+          "Cervantes",
+          "Soria"
+        ],
+        "deceased": false,
+        "birth_date": "16/10/2004",
+        "current_age": 21
+      }
+    ],
+    "children": []
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [],
+  "status": "created",
+  "notes": []
+}

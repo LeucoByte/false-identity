@@ -1,0 +1,110 @@
+{
+  "country": "spain",
+  "gender": "female",
+  "first_name": "Clara",
+  "surnames": [
+    "Conde",
+    "Santiago"
+  ],
+  "full_name": "Clara Conde Santiago",
+  "date_of_birth": "02/01/1991",
+  "age": 34,
+  "city": "Fresno de Torote",
+  "nearby_town": "Alcalá de Henares",
+  "postal_code": "28815",
+  "job": "Occupational Therapist",
+  "hobbies": [
+    "Following Real Betis",
+    "Hiking",
+    "Photography",
+    "Meditation",
+    "Short stories"
+  ],
+  "phone": "+34 698 33 45 21",
+  "height_cm": 163,
+  "weight_kg": 46,
+  "hair_color": "Dark Brown",
+  "eye_color": "Dark Brown",
+  "skin_tone": "Tan",
+  "email": "condeclara@fleckens.hu",
+  "website": "None",
+  "religion": "Atheist",
+  "email_status": "Inactivated",
+  "previous_job": null,
+  "social_class": "middle",
+  "salary": 35400,
+  "previous_salary": null,
+  "education": "Vocational training",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    },
+    {
+      "language": "German",
+      "level": "Advanced",
+      "certification": "None"
+    }
+  ],
+  "work_experience": {
+    "current_job": "Occupational Therapist",
+    "start_date": "01/07/2019",
+    "previous_positions": null
+  },
+  "family": {
+    "marital_status": "Single",
+    "partner": null,
+    "ex_partner": null,
+    "ex_partners": [],
+    "relationship_history": [],
+    "father": {
+      "name": "Leandro",
+      "surname": "Conde Ortiz",
+      "deceased": false,
+      "birth_date": "09/12/1965",
+      "current_age": 60
+    },
+    "mother": {
+      "name": "Trinidad",
+      "surname": "Santiago de la Vega",
+      "deceased": false,
+      "birth_date": "17/10/1970",
+      "current_age": 55
+    },
+    "siblings": [
+      {
+        "name": "Jesús",
+        "surname": "Conde Santiago",
+        "gender": "male",
+        "surnames": [
+          "Conde",
+          "Santiago"
+        ],
+        "deceased": false,
+        "birth_date": "15/06/1994",
+        "current_age": 31
+      },
+      {
+        "name": "Natalia",
+        "surname": "Conde Santiago",
+        "gender": "female",
+        "surnames": [
+          "Conde",
+          "Santiago"
+        ],
+        "deceased": false,
+        "birth_date": "07/07/1992",
+        "current_age": 33
+      }
+    ],
+    "children": []
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [
+    "Remembers the 2004 Madrid train bombings",
+    "Lived through the Spanish housing bubble"
+  ],
+  "status": "created",
+  "notes": []
+}

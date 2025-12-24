@@ -1,0 +1,172 @@
+{
+  "country": "spain",
+  "gender": "female",
+  "first_name": "Teresa",
+  "surnames": [
+    "Maldonado",
+    "Zamorano"
+  ],
+  "full_name": "Teresa Maldonado Zamorano",
+  "date_of_birth": "09/01/1959",
+  "age": 66,
+  "city": "Vitoria-Gasteiz",
+  "nearby_town": null,
+  "postal_code": "01001",
+  "job": "Retired",
+  "hobbies": [
+    "Playing dominoes at home",
+    "Playing bingo",
+    "Watching corridas de toros on TV"
+  ],
+  "phone": "+34 789 11 58 24",
+  "height_cm": 156,
+  "weight_kg": 41,
+  "hair_color": "Dark Brown",
+  "eye_color": "Dark Brown",
+  "skin_tone": "Light",
+  "email": "tmald@fleckens.hu",
+  "website": "None",
+  "religion": "Catholic",
+  "email_status": "Inactivated",
+  "previous_job": "Managing Director",
+  "social_class": "high",
+  "salary": 88000,
+  "previous_salary": 103800,
+  "education": "No formal education",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    }
+  ],
+  "work_experience": {
+    "current_job": "Retired",
+    "start_date": "01/02/2026",
+    "retirement_age": 67,
+    "previous_positions": [
+      {
+        "job": "Managing Director",
+        "start_date": "01/08/2003",
+        "end_date": "01/02/2026",
+        "termination_reason": "Retirement"
+      }
+    ]
+  },
+  "family": {
+    "marital_status": "Divorced",
+    "partner": null,
+    "ex_partner": {
+      "name": "Justo",
+      "surname": "Montes Peralta",
+      "gender": "male",
+      "surnames": [
+        "Montes",
+        "Peralta"
+      ],
+      "deceased": false,
+      "birth_date": "19/05/1958",
+      "current_age": 67,
+      "marriage_date": "20/02/1979",
+      "end_date": null,
+      "duration": 46,
+      "divorce_cause": "Lack of communication",
+      "marriage_number": 1
+    },
+    "ex_partners": [
+      {
+        "name": "Justo",
+        "surname": "Montes Peralta",
+        "gender": "male",
+        "surnames": [
+          "Montes",
+          "Peralta"
+        ],
+        "deceased": false,
+        "birth_date": "19/05/1958",
+        "current_age": 67,
+        "marriage_date": "20/02/1979",
+        "end_date": null,
+        "duration": 46,
+        "divorce_cause": "Lack of communication",
+        "marriage_number": 1
+      }
+    ],
+    "relationship_history": [],
+    "father": {
+      "name": "José Luis",
+      "surname": "Maldonado Oliva",
+      "deceased": true,
+      "birth_date": "12/09/1937",
+      "death_date": "09/03/2019",
+      "age_at_death": 82,
+      "cause_of_death": "Natural causes"
+    },
+    "mother": {
+      "name": "Consuelo",
+      "surname": "Zamorano Cardona",
+      "deceased": true,
+      "birth_date": "08/04/1941",
+      "death_date": "01/04/2014",
+      "age_at_death": 73,
+      "cause_of_death": "Sepsis"
+    },
+    "siblings": [
+      {
+        "name": "Candelaria",
+        "surname": "Maldonado Zamorano",
+        "gender": "female",
+        "surnames": [
+          "Maldonado",
+          "Zamorano"
+        ],
+        "deceased": true,
+        "birth_date": "06/06/1970",
+        "death_date": "16/03/2022",
+        "age_at_death": 52,
+        "cause_of_death": "Liver failure"
+      }
+    ],
+    "children": [
+      {
+        "name": "Eulalia",
+        "surname": "Montes Maldonado",
+        "gender": "female",
+        "surnames": [
+          "Montes",
+          "Maldonado"
+        ],
+        "deceased": false,
+        "birth_date": "05/10/1984",
+        "current_age": 41,
+        "from_marriage": 1
+      },
+      {
+        "name": "Soledad",
+        "surname": "Montes Maldonado",
+        "gender": "female",
+        "surnames": [
+          "Montes",
+          "Maldonado"
+        ],
+        "deceased": false,
+        "birth_date": "05/07/1985",
+        "current_age": 40,
+        "from_marriage": 1
+      }
+    ]
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [
+    "Grew up during Franco's dictatorship",
+    "Experienced the Spanish transition to democracy",
+    "Lived through the 1992 Barcelona Olympics era",
+    "Witnessed Spain joining the European Union (1986)",
+    "Experienced the 2008 economic crisis",
+    "Grew up with the Peseta currency (pre-Euro)",
+    "Remembers the 2004 Madrid train bombings",
+    "Lived through the Spanish housing bubble"
+  ],
+  "status": "created",
+  "notes": []
+}

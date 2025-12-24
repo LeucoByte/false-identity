@@ -1,0 +1,15 @@
+# Regional and Historical Characteristics for Russia
+# Format: characteristic_text|min_age|max_age|gender|probability
+# gender: male, female, both
+# probability: 0.0-1.0 (chance of applying)
+# CRITICAL: Current year is 2025. Min_age = age when CONSCIOUSLY experienced (not just alive)
+# For "grew up" events: need 10+ years of conscious experience
+# For "witnessed/experienced" events: need to be 14+ (teenager awareness)
+# For "remembers" events: need to be 7+ (childhood memories)
+
+Completed mandatory military service|36|70|male|0.80
+Grew up in the Soviet Union|44|999|both|0.95
+Lived through the 1990s economic crisis|37|999|both|0.75
+Remembers the collapse of the USSR|41|999|both|0.80
+Celebrates Victory Day with family|35|999|both|0.85
+Has relatives who fought in Great Patriotic War|40|999|both|0.60

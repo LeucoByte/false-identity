@@ -1,0 +1,30 @@
+Server
+Dishwasher
+Cleaner
+Janitor
+Security Guard
+Delivery Driver
+Construction Worker
+Factory Worker
+Warehouse Worker
+Cashier
+Stock Clerk
+Fast Food Worker
+Kitchen Helper
+Parking Attendant
+Gas Station Attendant
+Garbage Collector
+Landscaper
+Day Laborer
+Maintenance Worker
+Porter
+Farm Worker
+Mover
+Assembly Line Worker
+Car Washer
+Street Vendor
+Food Delivery Courier
+Messenger
+Loading Dock Worker
+Night Watchman
+Cook

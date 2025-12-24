@@ -1,0 +1,68 @@
+# Language certifications by language and level
+# Format: Language:Level:Certification1,Certification2,Certification3
+# Level can be: basic, intermediate, advanced, native
+# Empty means no certification (just has the level but hasn't taken exam)
+
+# English certifications
+English:basic:A1,A2,Cambridge KET,None
+English:intermediate:B1,B2,Cambridge PET,Cambridge First (FCE),TOEFL (60-90),IELTS (5.0-6.5),None
+English:advanced:C1,C2,Cambridge Advanced (CAE),Cambridge Proficiency (CPE),TOEFL (90+),IELTS (7.0+),None
+English:native:Native speaker
+
+# French certifications
+French:basic:A1,A2,DELF A1,DELF A2,None
+French:intermediate:B1,B2,DELF B1,DELF B2,None
+French:advanced:C1,C2,DALF C1,DALF C2,None
+French:native:Native speaker
+
+# German certifications
+German:basic:A1,A2,Goethe-Zertifikat A1,Goethe-Zertifikat A2,None
+German:intermediate:B1,B2,Goethe-Zertifikat B1,Goethe-Zertifikat B2,None
+German:advanced:C1,C2,Goethe-Zertifikat C1,Goethe-Zertifikat C2,None
+German:native:Native speaker
+
+# Italian certifications
+Italian:basic:A1,A2,CILS A1,CILS A2,None
+Italian:intermediate:B1,B2,CILS B1,CILS B2,None
+Italian:advanced:C1,C2,CILS C1,CILS C2,None
+Italian:native:Native speaker
+
+# Portuguese certifications
+Portuguese:basic:A1,A2,CAPLE,None
+Portuguese:intermediate:B1,B2,CAPLE,None
+Portuguese:advanced:C1,C2,CAPLE,None
+Portuguese:native:Native speaker
+
+# Spanish certifications (for non-natives, shouldn't appear for Spanish identities)
+Spanish:basic:A1,A2,DELE A1,DELE A2,None
+Spanish:intermediate:B1,B2,DELE B1,DELE B2,None
+Spanish:advanced:C1,C2,DELE C1,DELE C2,None
+Spanish:native:Native speaker
+
+# Regional Spanish languages
+Catalan:basic:A1,A2,None
+Catalan:intermediate:B1,B2,None
+Catalan:advanced:C1,C2,None
+Catalan:native:Native speaker
+
+Basque:basic:A1,A2,None
+Basque:intermediate:B1,B2,None
+Basque:advanced:C1,C2,None
+Basque:native:Native speaker
+
+Galician:basic:A1,A2,None
+Galician:intermediate:B1,B2,None
+Galician:advanced:C1,C2,None
+Galician:native:Native speaker
+
+# Chinese certifications
+Chinese:basic:HSK 1,HSK 2,None
+Chinese:intermediate:HSK 3,HSK 4,None
+Chinese:advanced:HSK 5,HSK 6,None
+Chinese:native:Native speaker
+
+# Arabic certifications
+Arabic:basic:Basic,None
+Arabic:intermediate:Intermediate,None
+Arabic:advanced:Advanced,None
+Arabic:native:Native speaker

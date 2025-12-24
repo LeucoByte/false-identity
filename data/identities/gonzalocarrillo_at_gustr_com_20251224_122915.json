@@ -1,0 +1,161 @@
+{
+  "country": "spain",
+  "gender": "male",
+  "first_name": "Gonzalo",
+  "surnames": [
+    "Carrillo",
+    "Morán"
+  ],
+  "full_name": "Gonzalo Carrillo Morán",
+  "date_of_birth": "04/12/1950",
+  "age": 75,
+  "city": "Noreña",
+  "nearby_town": "Oviedo",
+  "postal_code": "33180",
+  "job": "Retired",
+  "hobbies": [
+    "Following Valencia CF",
+    "Watching religious programs",
+    "Gardening (light activities)"
+  ],
+  "phone": "+34 719 27 14 01",
+  "height_cm": 169,
+  "weight_kg": 68,
+  "hair_color": "Dark Brown",
+  "eye_color": "Brown",
+  "skin_tone": "Light",
+  "email": "gonzalocarrillo@gustr.com",
+  "website": "None",
+  "religion": "Catholic",
+  "email_status": "Inactivated",
+  "previous_job": "Electrical Engineer",
+  "social_class": "upper-middle",
+  "salary": 28800,
+  "previous_salary": 61500,
+  "education": "Bachelor's degree - Electrical Engineering",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    }
+  ],
+  "work_experience": {
+    "current_job": "Retired",
+    "start_date": "01/07/2016",
+    "retirement_age": 66,
+    "previous_positions": [
+      {
+        "job": "Electrical Engineer",
+        "start_date": "01/11/1983",
+        "end_date": "01/07/2016",
+        "termination_reason": "Retirement"
+      }
+    ]
+  },
+  "family": {
+    "marital_status": "Married",
+    "partner": {
+      "name": "Aurora",
+      "surname": "Castillo Gallardo",
+      "gender": "female",
+      "surnames": [
+        "Castillo",
+        "Gallardo"
+      ],
+      "deceased": false,
+      "birth_date": "08/06/1951",
+      "current_age": 74,
+      "start_date": "23/01/1997",
+      "marriage_date": "23/01/1997"
+    },
+    "ex_partner": {
+      "name": "Bernarda",
+      "surname": "de los Santos Villar",
+      "gender": "female",
+      "surnames": [
+        "de los Santos",
+        "Villar"
+      ],
+      "deceased": true,
+      "marriage_date": "11/02/1984",
+      "end_date": "13/11/1987",
+      "duration": 3,
+      "divorce_cause": "Death of spouse (Stroke)",
+      "marriage_number": 1,
+      "birth_date": "28/04/1954",
+      "death_date": "12/04/2014",
+      "age_at_death": 60,
+      "cause_of_death": "Stroke"
+    },
+    "ex_partners": [
+      {
+        "name": "Bernarda",
+        "surname": "de los Santos Villar",
+        "gender": "female",
+        "surnames": [
+          "de los Santos",
+          "Villar"
+        ],
+        "deceased": true,
+        "marriage_date": "11/02/1984",
+        "end_date": "13/11/1987",
+        "duration": 3,
+        "divorce_cause": "Death of spouse (Stroke)",
+        "marriage_number": 1,
+        "birth_date": "28/04/1954",
+        "death_date": "12/04/2014",
+        "age_at_death": 60,
+        "cause_of_death": "Stroke"
+      }
+    ],
+    "relationship_history": [],
+    "father": {
+      "name": "Francisco",
+      "surname": "Carrillo Blanco",
+      "deceased": true,
+      "birth_date": "22/08/1915",
+      "death_date": "12/02/1995",
+      "age_at_death": 80,
+      "cause_of_death": "Stroke"
+    },
+    "mother": {
+      "name": "Celia",
+      "surname": "Morán de la Torre",
+      "deceased": true,
+      "birth_date": "19/03/1917",
+      "death_date": "15/10/2009",
+      "age_at_death": 92,
+      "cause_of_death": "Respiratory failure"
+    },
+    "siblings": [
+      {
+        "name": "Severino",
+        "surname": "Carrillo Morán",
+        "gender": "male",
+        "surnames": [
+          "Carrillo",
+          "Morán"
+        ],
+        "deceased": true,
+        "birth_date": "15/10/1944",
+        "death_date": "11/05/2003",
+        "age_at_death": 59,
+        "cause_of_death": "Diabetes complications"
+      }
+    ],
+    "children": []
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [
+    "Completed mandatory military service (Mili)",
+    "Grew up during Franco's dictatorship",
+    "Witnessed the Spanish transition to democracy",
+    "Lived through the 1992 Barcelona Olympics era",
+    "Witnessed Spain joining the European Union (1986)",
+    "Remembers the 2004 Madrid train bombings",
+    "Lived through the Spanish housing bubble"
+  ],
+  "status": "created",
+  "notes": []
+}

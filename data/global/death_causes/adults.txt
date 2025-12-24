@@ -1,0 +1,9 @@
+# Death causes for adults
+Heart attack
+Cancer
+Stroke
+Diabetes complications
+Liver disease
+Traffic accident
+Workplace accident
+Suicide

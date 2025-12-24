@@ -1,0 +1,4 @@
+# --- Country status ---
+finished=false
+
+

@@ -1,0 +1,30 @@
+Waitress
+Dishwasher
+Cleaner
+Housekeeper
+Cashier
+Sales Clerk
+Fast Food Worker
+Kitchen Helper
+Nanny
+Babysitter
+Caregiver
+Home Health Aide
+Retail Associate
+Factory Worker
+Seamstress
+Laundry Worker
+Hotel Maid
+Receptionist
+Food Service Worker
+Assembly Line Worker
+Stock Clerk
+Barista
+Store Clerk
+Hairdresser Assistant
+Manicurist
+Childcare Assistant
+Eldercare Worker
+Janitor
+Cook
+Dietary Aide

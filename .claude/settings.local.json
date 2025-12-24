@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(cat:*)",
+      "Bash(mkdir:*)",
+      "Bash(pip3 install:*)",
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(for i in {1..5})",
+      "Bash(do echo \"=== ROUND $i ===\")",
+      "Bash(done)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(tee:*)",
+      "Bash(__NEW_LINE__ if [ $? -eq 0 ])",
+      "Bash(then)",
+      "Bash(else)",
+      "Bash(fi)",
+      "Bash(timeout 600 python3:*)",
+      "Bash(__NEW_LINE__ echo \"\")"
+    ]
+  }
+}

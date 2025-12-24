@@ -1,0 +1,127 @@
+{
+  "country": "spain",
+  "gender": "male",
+  "first_name": "Álvaro",
+  "surnames": [
+    "Jiménez",
+    "Palacios"
+  ],
+  "full_name": "Álvaro Jiménez Palacios",
+  "date_of_birth": "31/12/1996",
+  "age": 28,
+  "city": "Culleredo",
+  "nearby_town": "A Coruña",
+  "postal_code": "15189",
+  "job": "Mechanic",
+  "hobbies": [
+    "Traveling within Spain",
+    "Mountain hiking",
+    "Playing piano",
+    "Audiobooks",
+    "Laser tag"
+  ],
+  "phone": "+34 790 87 04 07",
+  "height_cm": 176,
+  "weight_kg": 78,
+  "hair_color": "Black",
+  "eye_color": "Brown",
+  "skin_tone": "Light",
+  "email": "alvaro96@jourrapide.com",
+  "website": "None",
+  "religion": "Catholic",
+  "email_status": "Inactivated",
+  "previous_job": null,
+  "social_class": "middle",
+  "salary": 37700,
+  "previous_salary": null,
+  "education": "Vocational training - Automotive Mechanics",
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "certification": "Native speaker"
+    },
+    {
+      "language": "English",
+      "level": "Advanced",
+      "certification": "None"
+    },
+    {
+      "language": "German",
+      "level": "Basic",
+      "certification": "None"
+    }
+  ],
+  "work_experience": {
+    "current_job": "Mechanic",
+    "start_date": "01/12/2019",
+    "previous_positions": null
+  },
+  "family": {
+    "marital_status": "Girlfriend",
+    "partner": {
+      "name": "Carlota",
+      "surname": "Hurtado Benítez",
+      "gender": "female",
+      "surnames": [
+        "Hurtado",
+        "Benítez"
+      ],
+      "deceased": false,
+      "birth_date": "22/07/1992",
+      "current_age": 33,
+      "start_date": "05/05/2023",
+      "marriage_date": null
+    },
+    "ex_partner": null,
+    "ex_partners": [],
+    "relationship_history": [],
+    "father": {
+      "name": "Guillermo",
+      "surname": "Jiménez Gil",
+      "deceased": false,
+      "birth_date": "17/10/1960",
+      "current_age": 65
+    },
+    "mother": {
+      "name": "María Ángeles",
+      "surname": "Palacios Arias",
+      "deceased": false,
+      "birth_date": "25/06/1961",
+      "current_age": 64
+    },
+    "siblings": [
+      {
+        "name": "Ángela",
+        "surname": "Jiménez Palacios",
+        "gender": "female",
+        "surnames": [
+          "Jiménez",
+          "Palacios"
+        ],
+        "deceased": false,
+        "birth_date": "23/03/1985",
+        "current_age": 40
+      }
+    ],
+    "children": [
+      {
+        "name": "Laia",
+        "surname": "Jiménez Hurtado",
+        "gender": "female",
+        "surnames": [
+          "Jiménez",
+          "Hurtado"
+        ],
+        "deceased": false,
+        "birth_date": "10/09/2024",
+        "current_age": 1,
+        "from_marriage": 1
+      }
+    ]
+  },
+  "considerations": "# CULTURAL CONSIDERATIONS FOR SPAIN\n\n## Social Behavior\n- Spaniards are generally warm, friendly, and expressive in conversation\n- Personal space is smaller than in Northern Europe; close physical proximity is normal\n- Greetings often involve two kisses on the cheeks (right cheek first) among friends and family\n- Direct eye contact is important and shows confidence and honesty\n- Speaking loudly and passionately is common and not considered rude\n\n## Daily Life & Schedule\n- Late meal times: lunch around 2-3 PM, dinner around 9-10 PM or later\n- Siesta culture still exists in smaller towns (businesses close 2-5 PM)\n- Social life happens late: going out at 11 PM-midnight is normal\n- Sunday family lunches are a sacred tradition in many households\n\n## Communication Style\n- Interrupting in conversation is normal and shows engagement, not rudeness\n- Spaniards value directness but maintain politeness\n- Using hands and gestures while speaking is very common\n- Complaining about politics, economy, or weather is a normal conversation starter\n\n## Work Culture\n- Work-life balance is highly valued\n- Long lunch breaks (1.5-2 hours) are still common in many places\n- August is vacation month - many businesses close\n- Personal relationships at work are important\n\n## Social Etiquette\n- Always greet shopkeepers when entering a store (\"Hola, buenos días\")\n- Splitting bills (\"ir a medias\") is becoming more common among younger people\n- Tipping is not mandatory but appreciated (5-10% in restaurants)\n- Dress tends to be more formal/stylish than in Anglo countries\n\n## Food & Drink\n- Coffee culture is huge: café con leche in morning, café solo after meals\n- Tapas culture: eating standing at bars is normal\n- Wine or beer with meals is common and socially acceptable\n- Never rush a meal - dining is a social experience\n\n## Regional Differences\n- Strong regional identities exist (Catalonia, Basque Country, Galicia, Andalusia)\n- Be aware of language sensitivities (Catalan, Basque, Galician speakers)\n- Avoid discussing regional independence issues unless you know the person well\n- Each region has distinct traditions, food, and customs\n\n## Things to Avoid\n- Don't compare Spain to Latin American countries\n- Don't assume everyone likes bullfighting (it's controversial)\n- Don't be overly punctual for social events (15-30 min late is normal)\n- Don't discuss the Civil War or Franco era unless you know the person very well\n",
+  "regional_characteristics": [],
+  "status": "created",
+  "notes": []
+}

@@ -1,0 +1,60 @@
+# --- Country status ---
+finished=false
+
+# --- Name rules ---
+name_order=first+surname
+surname_count=1
+surname_usage=always
+
+# --- Date format ---
+date_format=DD/MM/YYYY
+
+# --- Age rules ---
+life_expectancy=78
+min_age=18
+max_age=78
+
+# --- Fertility rules ---
+# Female fertility limits (based on medical reality)
+female_fertility_min_age=15
+female_fertility_max_age=45
+# Parent age limits (to avoid unrealistic parent-child gaps)
+parent_min_age_gap=18
+parent_max_age_gap=45
+
+# --- Phone rules ---
+phone_country_code=+66
+phone_length=9
+phone_mobile_prefixes=6,8,9
+phone_landline_prefixes=2,3,4,5,7
+phone_format=##-####-####
+
+# --- Physical characteristics ---
+# Format: ColorName:Probability (probabilities should sum to 100)
+# Thai demographics: predominantly black hair, dark brown eyes, medium to tan skin
+hair_colors=Black:93,Dark Brown:5,Brown:1,Gray:0.6,White:0.4
+eye_colors=Dark Brown:92,Brown:7,Light Brown:0.8,Hazel:0.2
+skin_tones=Medium:40,Tan:35,Light:15,Olive:7,Dark:3
+
+# --- Religion ---
+# Format: Religion:Probability (based on Thai demographics)
+# Thailand is predominantly Buddhist (94.5%)
+religions=Buddhist:94.5,Muslim:4.3,Christian:0.7,Hindu:0.3,Atheist:0.1,Other:0.1
+
+# --- Family configuration ---
+# Average number of children in Thailand (declining, currently ~1.5)
+average_children=1.5
+min_children=1
+max_children=3
+
+# Siblings configuration (based on average_children)
+average_siblings=1.5
+min_siblings=0
+max_siblings=3
+
+# --- Employment configuration ---
+# Unemployment and jobless probabilities
+unemployment_rate=1.2
+jobless_rate=1.0
+# Probability of being orphan (very low)
+orphan_probability=0.5

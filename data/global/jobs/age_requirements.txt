@@ -1,0 +1,68 @@
+# Job age requirements
+# Format: JobTitle:MinAge
+# Jobs not listed have no minimum age requirement (default: 18)
+# These ages account for education/training time needed
+
+# Professional degrees (4-6 years university)
+Teacher:22
+Nurse:22
+Accountant:22
+Engineer:22
+Software Engineer:22
+Architect:23
+Lawyer:24
+Doctor:26
+Surgeon:28
+Dentist:26
+Veterinarian:26
+Pharmacist:24
+Psychologist:24
+University Professor:28
+
+# Medical/Healthcare requiring certification
+Dental Hygienist:21
+Paramedic:21
+Radiologic Technologist:21
+Physical Therapist:24
+Occupational Therapist:24
+Pharmacy Technician:21
+
+# Technical degrees (2-3 years)
+Laboratory Technician:21
+IT Support Specialist:20
+Web Developer:20
+Graphic Designer:20
+Sound Technician:20
+Photographer:20
+Electrician:20
+Plumber:20
+Carpenter:20
+Mechanic:20
+
+# Management positions (require experience)
+Office Manager:25
+Store Manager:23
+Customer Service Manager:23
+Project Manager:26
+Operations Manager:27
+Marketing Manager:26
+Sales Manager:25
+HR Manager:26
+Financial Manager:27
+General Manager:28
+CEO:30
+Director:28
+
+# Senior positions
+Senior Engineer:28
+Senior Developer:27
+Senior Accountant:27
+Chief Engineer:30
+
+# Additional professional roles
+Real Estate Agent:21
+Financial Analyst:22
+Nutritionist:23
+Interior Designer:22
+Chief Editor:25
+Journalist:21

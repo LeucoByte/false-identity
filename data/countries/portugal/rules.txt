@@ -1,0 +1,28 @@
+# --- Country status ---
+finished=false
+
+# --- Name rules ---
+name_order=first+surname1+surname2
+surname_count=2
+surname_usage=always
+
+# --- Date format ---
+date_format=DD/MM/YYYY
+
+# --- Age rules ---
+life_expectancy=82
+min_age=18
+max_age=82
+
+# --- Phone rules ---
+phone_country_code=+351
+phone_length=9
+phone_mobile_prefixes=91,92,93,96
+phone_landline_prefixes=21,22,23,24,25,26,27,28,29
+phone_format=### ### ###
+
+# --- Physical characteristics ---
+# Format: ColorName:Probability (probabilities should sum to 100)
+hair_colors=Black:30,Dark Brown:35,Brown:20,Light Brown:8,Dark Blonde:3,Blonde:2,Red:1,Light Blonde:0.5,Gray:0.3,White:0.2
+eye_colors=Dark Brown:40,Brown:35,Light Brown:15,Hazel:5,Green:3,Blue:1.5,Gray:0.5
+skin_tones=Light:50,Medium:40,Olive:8,Tan:1.5,Dark:0.5

@@ -1,0 +1,106 @@
+# Job to minimum education level mapping
+# Format: JobTitle:MinEducationLevel:FieldOfStudy (if applicable)
+# Levels: none, primary, secondary, vocational, bachelor, master, doctorate
+
+# No education required
+Server:none
+Dishwasher:none
+Cleaner:none
+Janitor:none
+Security Guard:primary
+Delivery Driver:primary
+Construction Worker:primary
+Factory Worker:primary
+Warehouse Worker:primary
+Cashier:primary
+Stock Clerk:primary
+Fast Food Worker:none
+Kitchen Helper:none
+Parking Attendant:primary
+Gas Station Attendant:primary
+Garbage Collector:primary
+Landscaper:primary
+Day Laborer:none
+Maintenance Worker:primary
+Porter:none
+Farm Worker:none
+Mover:none
+Assembly Line Worker:primary
+Car Washer:none
+Street Vendor:none
+Food Delivery Courier:none
+Cleaner:none
+Domestic Worker:primary
+Kitchen Helper:primary
+Canteen Assistant:primary
+Factory Packager:none
+Messenger:primary
+Loading Dock Worker:primary
+Night Watchman:primary
+Cook:primary
+
+# Secondary education
+Sales Representative:secondary
+Bank Teller:secondary
+Administrative Assistant:secondary
+Customer Service Manager:secondary
+Postal Worker:secondary
+Flight Attendant:secondary
+Real Estate Agent:secondary
+
+# Vocational/Technical
+Electrician:vocational:Electrical Engineering
+Plumber:vocational:Plumbing
+Carpenter:vocational:Carpentry
+Mechanic:vocational:Automotive Mechanics
+Technician:vocational:Technical Studies
+IT Support Specialist:vocational:Information Technology
+Web Developer:vocational:Web Development
+Graphic Designer:vocational:Graphic Design
+Photographer:vocational:Photography
+Sound Technician:vocational:Audio Engineering
+Dental Hygienist:vocational:Dental Hygiene
+Laboratory Technician:vocational:Laboratory Science
+Paramedic:vocational:Emergency Medical Services
+Chef:vocational:Culinary Arts
+
+# Bachelor's degree
+Teacher:bachelor:Education
+Accountant:bachelor:Accounting
+Engineer:bachelor:Engineering
+Software Engineer:bachelor:Computer Science
+Architect:bachelor:Architecture
+Nurse:bachelor:Nursing
+Police Officer:secondary
+Firefighter:secondary
+Office Manager:bachelor:Business Administration
+Store Manager:secondary
+Insurance Agent:secondary
+Social Worker:bachelor:Social Work
+Financial Analyst:bachelor:Finance
+Nutritionist:bachelor:Nutrition
+Interior Designer:bachelor:Interior Design
+Journalist:bachelor:Journalism
+
+# Advanced degrees
+Lawyer:bachelor:Law
+Doctor:doctorate:Medicine
+Surgeon:doctorate:Medicine
+Dentist:bachelor:Dentistry
+Veterinarian:bachelor:Veterinary Medicine
+Pharmacist:bachelor:Pharmacy
+Psychologist:bachelor:Psychology
+University Professor:doctorate:varies
+Chief Editor:bachelor:Journalism
+Marketing Manager:bachelor:Marketing
+Operations Manager:bachelor:Business Administration
+Project Manager:bachelor:Project Management
+HR Manager:bachelor:Human Resources
+Financial Manager:bachelor:Finance
+General Manager:bachelor:Business Administration
+CEO:bachelor:Business Administration
+Director:bachelor:varies
+Senior Engineer:bachelor:Engineering
+Senior Developer:bachelor:Computer Science
+Senior Accountant:bachelor:Accounting
+Chief Engineer:bachelor:Engineering

@@ -1,0 +1,31 @@
+{
+  "country": "spain",
+  "gender": "female",
+  "first_name": "Soledad",
+  "surnames": [
+    "Cerezo",
+    "Casado"
+  ],
+  "full_name": "Soledad Cerezo Casado",
+  "date_of_birth": "24/03/1997",
+  "age": 28,
+  "city": "A Coruña",
+  "nearby_town": "Arteixo",
+  "job": "Baker",
+  "hobbies": [
+    "Book clubs",
+    "Hair styling",
+    "Plant care",
+    "Cheese tasting",
+    "Reading"
+  ],
+  "phone": "+34 874 59 05 59",
+  "height_cm": 161,
+  "weight_kg": 58,
+  "hair_color": "Light Brown",
+  "eye_color": "Brown",
+  "skin_tone": "Light",
+  "email": "cerezosoledad@rhyta.com",
+  "website": "test_espania.es",
+  "email_status": "Inactivated"
+}

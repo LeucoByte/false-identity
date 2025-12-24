@@ -1,0 +1,12 @@
+# Generic death causes that can happen to anyone
+Natural causes
+Heart attack
+Stroke
+Cancer
+Pneumonia
+Respiratory failure
+Cardiac arrest
+Pulmonary embolism
+Sepsis
+Kidney failure
+Liver failure

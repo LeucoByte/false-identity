@@ -1,0 +1,30 @@
+Engineer
+Architect
+Lawyer
+Doctor
+Dentist
+Pharmacist
+University Professor
+Senior Manager
+Marketing Director
+Financial Analyst
+Investment Banker
+Software Engineer
+Data Scientist
+Project Manager
+Human Resources Director
+Operations Manager
+Product Manager
+Business Consultant
+Civil Engineer
+Mechanical Engineer
+Electrical Engineer
+Surgeon
+Anesthesiologist
+Radiologist
+Pilot
+Air Traffic Controller
+Research Scientist
+Psychologist
+Veterinarian
+Medical Director

@@ -1,0 +1,560 @@
+Madrid|28001
+Alcalá de Henares, Madrid|28801
+Getafe, Madrid|28901
+Móstoles, Madrid|28931
+Fuenlabrada, Madrid|28941
+Leganés, Madrid|28911
+Alcorcón, Madrid|28921
+Torrejón de Ardoz, Madrid|28850
+Parla, Madrid|28980
+Alcobendas, Madrid|28100
+San Fernando de Henares, Madrid|28830
+Rivas-Vaciamadrid, Madrid|28520
+Coslada, Madrid|28820
+Pozuelo de Alarcón, Madrid|28223
+Las Rozas de Madrid, Madrid|28230
+Majadahonda, Madrid|28220
+Barcelona|08001
+L'Hospitalet de Llobregat, Barcelona|08901
+Badalona, Barcelona|08911
+Sabadell, Barcelona|08201
+Terrassa, Barcelona|08221
+Santa Coloma de Gramenet, Barcelona|08921
+Mataró, Barcelona|08301
+Cornellà de Llobregat, Barcelona|08940
+Sant Boi de Llobregat, Barcelona|08830
+Manresa, Barcelona|08240
+Granollers, Barcelona|08400
+Rubí, Barcelona|08191
+Viladecans, Barcelona|08840
+Castelldefels, Barcelona|08860
+El Prat de Llobregat, Barcelona|08820
+Esplugues de Llobregat, Barcelona|08950
+Valencia|46001
+Torrent, Valencia|46900
+Paterna, Valencia|46980
+Mislata, Valencia|46920
+Burjassot, Valencia|46100
+Manises, Valencia|46940
+Alaquàs, Valencia|46970
+Xirivella, Valencia|46950
+Aldaia, Valencia|46960
+Quart de Poblet, Valencia|46930
+Picanya, Valencia|46210
+Paiporta, Valencia|46200
+Massanassa, Valencia|46470
+Alfafar, Valencia|46910
+Sedaví, Valencia|46910
+Benetússer, Valencia|46910
+Sevilla|41001
+Dos Hermanas, Sevilla|41700
+Alcalá de Guadaíra, Sevilla|41500
+Utrera, Sevilla|41710
+Mairena del Aljarafe, Sevilla|41927
+La Rinconada, Sevilla|41309
+Los Palacios y Villafranca, Sevilla|41720
+Camas, Sevilla|41900
+Carmona, Sevilla|41410
+Écija, Sevilla|41400
+San Juan de Aznalfarache, Sevilla|41920
+Bormujos, Sevilla|41930
+Tomares, Sevilla|41940
+Gelves, Sevilla|41120
+Coria del Río, Sevilla|41100
+Espartinas, Sevilla|41807
+Zaragoza|50001
+Utebo, Zaragoza|50180
+Cuarte de Huerva, Zaragoza|50410
+La Puebla de Alfindén, Zaragoza|50171
+Zuera, Zaragoza|50800
+Casetas, Zaragoza|50620
+Villanueva de Gállego, Zaragoza|50830
+San Mateo de Gállego, Zaragoza|50840
+Pedrola, Zaragoza|50630
+Alagón, Zaragoza|50630
+La Almunia de Doña Godina, Zaragoza|50100
+Ejea de los Caballeros, Zaragoza|50600
+Tarazona, Zaragoza|50500
+Calatayud, Zaragoza|50300
+Monzón, Zaragoza|50480
+Huesca, Zaragoza|50700
+Málaga|29001
+Marbella, Málaga|29600
+Mijas, Málaga|29650
+Vélez-Málaga, Málaga|29700
+Fuengirola, Málaga|29640
+Torremolinos, Málaga|29620
+Estepona, Málaga|29680
+Benalmádena, Málaga|29630
+Rincón de la Victoria, Málaga|29730
+Antequera, Málaga|29200
+Alhaurín de la Torre, Málaga|29130
+Coín, Málaga|29100
+Manilva, Málaga|29691
+Nerja, Málaga|29780
+Torrox, Málaga|29770
+Cártama, Málaga|29580
+Murcia|30001
+Cartagena, Murcia|30201
+Lorca, Murcia|30800
+Molina de Segura, Murcia|30500
+Alcantarilla, Murcia|30820
+Mazarrón, Murcia|30870
+Yecla, Murcia|30510
+Águilas, Murcia|30880
+Caravaca de la Cruz, Murcia|30400
+Torre-Pacheco, Murcia|30700
+San Javier, Murcia|30730
+Los Alcázares, Murcia|30710
+Cieza, Murcia|30530
+Jumilla, Murcia|30520
+Totana, Murcia|30850
+Alhama de Murcia, Murcia|30840
+Palma de Mallorca|07001
+Calvià, Palma de Mallorca|07180
+Manacor, Palma de Mallorca|07500
+Llucmajor, Palma de Mallorca|07620
+Marratxí, Palma de Mallorca|07141
+Inca, Palma de Mallorca|07300
+Alcúdia, Palma de Mallorca|07400
+Felanitx, Palma de Mallorca|07200
+Pollença, Palma de Mallorca|07460
+Sóller, Palma de Mallorca|07100
+Andratx, Palma de Mallorca|07150
+Santanyí, Palma de Mallorca|07650
+Sa Pobla, Palma de Mallorca|07420
+Artà, Palma de Mallorca|07570
+Campos, Palma de Mallorca|07630
+Capdepera, Palma de Mallorca|07580
+Las Palmas de Gran Canaria|35001
+Telde, Las Palmas|35200
+Santa Lucía de Tirajana, Las Palmas|35110
+Arucas, Las Palmas|35400
+Agüimes, Las Palmas|35260
+Ingenio, Las Palmas|35250
+Gáldar, Las Palmas|35460
+Mogán, Las Palmas|35140
+Teror, Las Palmas|35330
+Santa Brígida, Las Palmas|35300
+Valleseco, Las Palmas|35360
+Firgas, Las Palmas|35430
+Moya, Las Palmas|35420
+San Bartolomé de Tirajana, Las Palmas|35100
+Agaete, Las Palmas|35480
+Tejeda, Las Palmas|35360
+Bilbao|48001
+Barakaldo, Bilbao|48901
+Getxo, Bilbao|48930
+Portugalete, Bilbao|48920
+Santurtzi, Bilbao|48980
+Basauri, Bilbao|48970
+Leioa, Bilbao|48940
+Galdakao, Bilbao|48960
+Durango, Bilbao|48200
+Bermeo, Bilbao|48370
+Mungia, Bilbao|48100
+Gernika-Lumo, Bilbao|48300
+Erandio, Bilbao|48950
+Sestao, Bilbao|48910
+Valle de Trápaga, Bilbao|48510
+Sopelana, Bilbao|48600
+Córdoba|14001
+Lucena, Córdoba|14900
+Puente Genil, Córdoba|14500
+Montilla, Córdoba|14550
+Palma del Río, Córdoba|14700
+Priego de Córdoba, Córdoba|14800
+Baena, Córdoba|14850
+Cabra, Córdoba|14940
+Pozoblanco, Córdoba|14400
+Villanueva de Córdoba, Córdoba|14440
+Peñarroya-Pueblonuevo, Córdoba|14200
+Rute, Córdoba|14960
+Fernán Núñez, Córdoba|14520
+La Carlota, Córdoba|14100
+Bujalance, Córdoba|14650
+Aguilar de la Frontera, Córdoba|14920
+Valladolid|47001
+Laguna de Duero, Valladolid|47140
+Medina del Campo, Valladolid|47400
+Arroyo de la Encomienda, Valladolid|47195
+Tudela de Duero, Valladolid|47320
+Íscar, Valladolid|47420
+Peñafiel, Valladolid|47300
+Cigales, Valladolid|47270
+Simancas, Valladolid|47130
+Zaratán, Valladolid|47610
+Tordesillas, Valladolid|47100
+Mojados, Valladolid|47250
+La Cistérniga, Valladolid|47193
+Olmedo, Valladolid|47410
+Wamba, Valladolid|47340
+Renedo de Esgueva, Valladolid|47169
+Vigo|36201
+Redondela, Vigo|36800
+Moaña, Vigo|36950
+Cangas, Vigo|36940
+Nigrán, Vigo|36350
+Baiona, Vigo|36300
+Gondomar, Vigo|36380
+Mos, Vigo|36416
+Porriño, Vigo|36400
+Fornelos de Montes, Vigo|36585
+Salvaterra de Miño, Vigo|36450
+Ponteareas, Vigo|36860
+Salceda de Caselas, Vigo|36456
+Pazos de Borbén, Vigo|36413
+Arcade, Vigo|36690
+Chapela, Vigo|36320
+Gijón|33201
+Avilés, Gijón|33400
+Siero, Gijón|33510
+Langreo, Gijón|33900
+Mieres, Gijón|33600
+Oviedo, Gijón|33001
+Corvera de Asturias, Gijón|33404
+Carreño, Gijón|33438
+Villaviciosa, Gijón|33300
+Castrillón, Gijón|33450
+Noreña, Gijón|33180
+Llanera, Gijón|33428
+Candás, Gijón|33430
+Luanco, Gijón|33440
+Piedras Blancas, Gijón|33450
+La Felguera, Gijón|33930
+L'Hospitalet de Llobregat|08901
+Cornellà de Llobregat, L'Hospitalet|08940
+Esplugues de Llobregat, L'Hospitalet|08950
+Sant Just Desvern, L'Hospitalet|08960
+El Prat de Llobregat, L'Hospitalet|08820
+Sant Feliu de Llobregat, L'Hospitalet|08980
+Molins de Rei, L'Hospitalet|08750
+Sant Joan Despí, L'Hospitalet|08970
+Sant Boi de Llobregat, L'Hospitalet|08830
+Viladecans, L'Hospitalet|08840
+Gavà, L'Hospitalet|08850
+Castelldefels, L'Hospitalet|08860
+Sant Vicenç dels Horts, L'Hospitalet|08620
+Pallejà, L'Hospitalet|08780
+Corbera de Llobregat, L'Hospitalet|08757
+Cervelló, L'Hospitalet|08758
+A Coruña|15001
+Oleiros, A Coruña|15173
+Arteixo, A Coruña|15142
+Culleredo, A Coruña|15189
+Cambre, A Coruña|15660
+Sada, A Coruña|15160
+Betanzos, A Coruña|15300
+Carballo, A Coruña|15100
+Ferrol, A Coruña|15401
+Narón, A Coruña|15570
+Santiago de Compostela, A Coruña|15701
+Ames, A Coruña|15220
+Cerceda, A Coruña|15185
+Abegondo, A Coruña|15162
+Bergondo, A Coruña|15165
+Carral, A Coruña|15166
+Vitoria-Gasteiz|01001
+Llodio, Vitoria-Gasteiz|01400
+Amurrio, Vitoria-Gasteiz|01470
+Salvatierra, Vitoria-Gasteiz|01200
+Alegría-Dulantzi, Vitoria-Gasteiz|01240
+Legutio, Vitoria-Gasteiz|01170
+Zigoitia, Vitoria-Gasteiz|01199
+Armiñón, Vitoria-Gasteiz|01212
+Nanclares de la Oca, Vitoria-Gasteiz|01230
+Subijana-Morillas, Vitoria-Gasteiz|01193
+Foronda, Vitoria-Gasteiz|01196
+Mendoza, Vitoria-Gasteiz|01230
+Armentia, Vitoria-Gasteiz|01007
+Ali, Vitoria-Gasteiz|01015
+Gamarra, Vitoria-Gasteiz|01013
+Betoño, Vitoria-Gasteiz|01013
+Granada|18001
+Armilla, Granada|18100
+Albolote, Granada|18220
+Maracena, Granada|18200
+Atarfe, Granada|18230
+Santa Fe, Granada|18320
+Las Gabias, Granada|18110
+Peligros, Granada|18210
+Huétor Vega, Granada|18198
+La Zubia, Granada|18140
+Ogíjares, Granada|18151
+Monachil, Granada|18193
+Cúllar Vega, Granada|18195
+Jun, Granada|18213
+Churriana de la Vega, Granada|18194
+Pulianas, Granada|18197
+Elche|03201
+Santa Pola, Elche|03130
+Crevillent, Elche|03330
+Aspe, Elche|03680
+La Romana, Elche|03669
+Monforte del Cid, Elche|03670
+Novelda, Elche|03660
+Torrevieja, Elche|03180
+Guardamar del Segura, Elche|03140
+Dolores, Elche|03150
+San Fulgencio, Elche|03177
+Catral, Elche|03158
+Granja de Rocamora, Elche|03159
+Albatera, Elche|03340
+San Isidro, Elche|03204
+Arenales del Sol, Elche|03195
+Oviedo|33001
+Siero, Oviedo|33510
+Llanera, Oviedo|33428
+Las Regueras, Oviedo|33190
+Noreña, Oviedo|33180
+Ribera de Arriba, Oviedo|33169
+Santo Adriano, Oviedo|33115
+Grado, Oviedo|33820
+Pravia, Oviedo|33120
+Mieres, Oviedo|33600
+Langreo, Oviedo|33900
+San Martín del Rey Aurelio, Oviedo|33920
+Laviana, Oviedo|33980
+Aller, Oviedo|33670
+Quirós, Oviedo|33117
+Morcín, Oviedo|33164
+Badalona|08911
+Santa Coloma de Gramenet, Badalona|08921
+Sant Adrià de Besòs, Badalona|08930
+Montgat, Badalona|08390
+Tiana, Badalona|08391
+Alella, Badalona|08328
+Teià, Badalona|08329
+Premià de Mar, Badalona|08330
+Premià de Dalt, Badalona|08338
+Vilassar de Mar, Badalona|08340
+Vilassar de Dalt, Badalona|08339
+Cabrera de Mar, Badalona|08349
+El Masnou, Badalona|08320
+Argentona, Badalona|08310
+Mataró, Badalona|08301
+Òrrius, Badalona|08317
+Cartagena|30201
+La Unión, Cartagena|30360
+Torre-Pacheco, Cartagena|30700
+Fuente Álamo, Cartagena|30320
+San Javier, Cartagena|30730
+Los Alcázares, Cartagena|30710
+Mazarrón, Cartagena|30870
+Cabo de Palos, Cartagena|30370
+La Manga, Cartagena|30380
+Los Dolores, Cartagena|30310
+Los Belones, Cartagena|30385
+Pozo Estrecho, Cartagena|30594
+El Algar, Cartagena|30366
+Santa Lucía, Cartagena|30202
+La Aljorra, Cartagena|30390
+Canteras, Cartagena|30395
+Jerez de la Frontera|11401
+El Puerto de Santa María, Jerez|11500
+Sanlúcar de Barrameda, Jerez|11540
+Rota, Jerez|11520
+Chipiona, Jerez|11550
+Trebujena, Jerez|11560
+Lebrija, Jerez|41740
+Arcos de la Frontera, Jerez|11630
+Puerto Real, Jerez|11510
+San José del Valle, Jerez|11579
+Paterna de Rivera, Jerez|11177
+Medina-Sidonia, Jerez|11170
+Conil de la Frontera, Jerez|11140
+Vejer de la Frontera, Jerez|11150
+Barbate, Jerez|11160
+Chiclana de la Frontera, Jerez|11130
+Sabadell|08201
+Terrassa, Sabadell|08221
+Barberà del Vallès, Sabadell|08210
+Cerdanyola del Vallès, Sabadell|08290
+Ripollet, Sabadell|08291
+Badia del Vallès, Sabadell|08214
+Sant Quirze del Vallès, Sabadell|08192
+Castellar del Vallès, Sabadell|08211
+Sentmenat, Sabadell|08181
+Palau-solità i Plegamans, Sabadell|08184
+Polinyà, Sabadell|08213
+Santa Perpètua de Mogoda, Sabadell|08130
+Montcada i Reixac, Sabadell|08110
+Rubí, Sabadell|08191
+Sant Cugat del Vallès, Sabadell|08190
+Mollet del Vallès, Sabadell|08100
+Santa Cruz de Tenerife|38001
+La Laguna, Santa Cruz de Tenerife|38201
+Candelaria, Santa Cruz de Tenerife|38530
+El Rosario, Santa Cruz de Tenerife|38290
+Güímar, Santa Cruz de Tenerife|38500
+Arafo, Santa Cruz de Tenerife|38550
+Fasnia, Santa Cruz de Tenerife|38560
+Arico, Santa Cruz de Tenerife|38580
+Granadilla de Abona, Santa Cruz de Tenerife|38600
+San Miguel de Abona, Santa Cruz de Tenerife|38620
+Arona, Santa Cruz de Tenerife|38640
+Vilaflor, Santa Cruz de Tenerife|38614
+Adeje, Santa Cruz de Tenerife|38670
+Guía de Isora, Santa Cruz de Tenerife|38680
+Santiago del Teide, Santa Cruz de Tenerife|38686
+Los Cristianos, Santa Cruz de Tenerife|38650
+Almería|04001
+Roquetas de Mar, Almería|04740
+El Ejido, Almería|04700
+Níjar, Almería|04100
+Vícar, Almería|04738
+Adra, Almería|04770
+Huércal de Almería, Almería|04230
+Huércal-Overa, Almería|04600
+Vera, Almería|04620
+Cuevas del Almanzora, Almería|04610
+Carboneras, Almería|04140
+Garrucha, Almería|04630
+Mojácar, Almería|04638
+Pulpí, Almería|04640
+Tabernas, Almería|04200
+Gádor, Almería|04560
+Pamplona|31001
+Barañáin, Pamplona|31010
+Burlada, Pamplona|31600
+Villava, Pamplona|31610
+Zizur Mayor, Pamplona|31180
+Ansoáin, Pamplona|31013
+Berriozar, Pamplona|31013
+Huarte, Pamplona|31620
+Noáin, Pamplona|31110
+Orkoien, Pamplona|31170
+Berrioplano, Pamplona|31195
+Cizur, Pamplona|31190
+Egüés, Pamplona|31486
+Aranguren, Pamplona|31191
+Galar, Pamplona|31191
+Sarriguren, Pamplona|31621
+Fuenlabrada|28941
+Móstoles, Fuenlabrada|28931
+Leganés, Fuenlabrada|28911
+Getafe, Fuenlabrada|28901
+Alcorcón, Fuenlabrada|28921
+Parla, Fuenlabrada|28980
+Humanes de Madrid, Fuenlabrada|28970
+Griñón, Fuenlabrada|28971
+Moraleja de Enmedio, Fuenlabrada|28950
+Pinto, Fuenlabrada|28320
+Valdemoro, Fuenlabrada|28340
+Torrejón de la Calzada, Fuenlabrada|28991
+Torrejón de Velasco, Fuenlabrada|28990
+Arroyomolinos, Fuenlabrada|28939
+Villaviciosa de Odón, Fuenlabrada|28670
+Casarrubuelos, Fuenlabrada|28977
+Alcalá de Henares|28801
+Torrejón de Ardoz, Alcalá de Henares|28850
+San Fernando de Henares, Alcalá de Henares|28830
+Coslada, Alcalá de Henares|28820
+Meco, Alcalá de Henares|28880
+Azuqueca de Henares, Alcalá de Henares|19200
+Los Santos de la Humosa, Alcalá de Henares|28890
+Villalbilla, Alcalá de Henares|28810
+Loeches, Alcalá de Henares|28890
+Anchuelo, Alcalá de Henares|28824
+Camarma de Esteruelas, Alcalá de Henares|28816
+Daganzo de Arriba, Alcalá de Henares|28814
+Ajalvir, Alcalá de Henares|28864
+Valdeavero, Alcalá de Henares|28812
+Fresno de Torote, Alcalá de Henares|28815
+Ribatejada, Alcalá de Henares|28813
+Leganés|28911
+Getafe, Leganés|28901
+Fuenlabrada, Leganés|28941
+Alcorcón, Leganés|28921
+Móstoles, Leganés|28931
+Parla, Leganés|28980
+Pinto, Leganés|28320
+Valdemoro, Leganés|28340
+Humanes de Madrid, Leganés|28970
+Griñón, Leganés|28971
+Torrejón de la Calzada, Leganés|28991
+Torrejón de Velasco, Leganés|28990
+Moraleja de Enmedio, Leganés|28950
+Serranillos del Valle, Leganés|28979
+Casarrubuelos, Leganés|28977
+Cubas de la Sagra, Leganés|28979
+Albacete|02001
+La Roda, Albacete|02630
+Villarrobledo, Albacete|02600
+Hellín, Albacete|02400
+Almansa, Albacete|02640
+Caudete, Albacete|02660
+Tobarra, Albacete|02500
+Casas-Ibáñez, Albacete|02200
+Chinchilla de Monte-Aragón, Albacete|02520
+Elche de la Sierra, Albacete|02430
+Madrigueras, Albacete|02230
+Tarazona de la Mancha, Albacete|02100
+Balazote, Albacete|02320
+Alpera, Albacete|02690
+Bonete, Albacete|02638
+Pétrola, Albacete|02510
+Ciudad Real|13001
+Puertollano, Ciudad Real|13500
+Tomelloso, Ciudad Real|13700
+Alcázar de San Juan, Ciudad Real|13600
+Valdepeñas, Ciudad Real|13300
+Manzanares, Ciudad Real|13200
+Daimiel, Ciudad Real|13250
+Miguelturra, Ciudad Real|13170
+Bolaños de Calatrava, Ciudad Real|13260
+Socuéllamos, Ciudad Real|13630
+Almagro, Ciudad Real|13270
+La Solana, Ciudad Real|13240
+Argamasilla de Alba, Ciudad Real|13710
+Villarrubia de los Ojos, Ciudad Real|13670
+Moral de Calatrava, Ciudad Real|13350
+Membrilla, Ciudad Real|13220
+Cuenca|16001
+Tarancón, Cuenca|16400
+Quintanar del Rey, Cuenca|16220
+San Clemente, Cuenca|16600
+Motilla del Palancar, Cuenca|16200
+Huete, Cuenca|16500
+Priego, Cuenca|16810
+Las Pedroñeras, Cuenca|16660
+Mota del Cuervo, Cuenca|16630
+Casasimarro, Cuenca|16640
+Villares del Saz, Cuenca|16737
+Minglanilla, Cuenca|16230
+Iniesta, Cuenca|16235
+Sisante, Cuenca|16650
+Cañete, Cuenca|16300
+Valeria, Cuenca|16315
+Guadalajara|19001
+Azuqueca de Henares, Guadalajara|19200
+Alovera, Guadalajara|19208
+Cabanillas del Campo, Guadalajara|19171
+Yunquera de Henares, Guadalajara|19210
+Yebes, Guadalajara|19162
+Marchamalo, Guadalajara|19180
+Chiloeches, Guadalajara|19160
+Villanueva de la Torre, Guadalajara|19174
+Horche, Guadalajara|19120
+Fontanar, Guadalajara|19173
+Torrejón del Rey, Guadalajara|19230
+Pioz, Guadalajara|19162
+Humanes, Guadalajara|19172
+Valdeluz, Guadalajara|19171
+Quer, Guadalajara|19209
+Toledo|45001
+Talavera de la Reina, Toledo|45600
+Illescas, Toledo|45200
+Seseña, Toledo|45224
+Gerindote, Toledo|45510
+Olías del Rey, Toledo|45280
+Sonseca, Toledo|45100
+Mora, Toledo|45400
+Madridejos, Toledo|45710
+Quintanar de la Orden, Toledo|45800
+Consuegra, Toledo|45700
+Ocaña, Toledo|45300
+Villacañas, Toledo|45860
+La Puebla de Montalbán, Toledo|45516
+Yuncos, Toledo|45210
+Yuncler, Toledo|45529

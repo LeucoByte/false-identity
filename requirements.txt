@@ -1,0 +1,10 @@
+# Synthetic Identity Generator - Dependencies
+
+# Cryptography for encryption/decryption
+cryptography>=41.0.0
+
+# HTTP requests for file.io upload
+requests>=2.31.0
+
+# Unicode character width calculation
+wcwidth

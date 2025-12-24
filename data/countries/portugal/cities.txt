@@ -1,0 +1,273 @@
+Lisboa
+Amadora, Lisboa
+Odivelas, Lisboa
+Loures, Lisboa
+Cascais, Lisboa
+Sintra, Lisboa
+Oeiras, Lisboa
+Almada, Lisboa
+Vila Franca de Xira, Lisboa
+Seixal, Lisboa
+Barreiro, Lisboa
+Montijo, Lisboa
+Alcochete, Lisboa
+Mafra, Lisboa
+Torres Vedras, Lisboa
+Alenquer, Lisboa
+Azambuja, Lisboa
+Sobral de Monte Agraço, Lisboa
+Arruda dos Vinhos, Lisboa
+Lourinhã, Lisboa
+Porto
+Vila Nova de Gaia, Porto
+Matosinhos, Porto
+Gondomar, Porto
+Maia, Porto
+Valongo, Porto
+Vila do Conde, Porto
+Póvoa de Varzim, Porto
+Santo Tirso, Porto
+Trofa, Porto
+Paços de Ferreira, Porto
+Paredes, Porto
+Penafiel, Porto
+Lousada, Porto
+Felgueiras, Porto
+Amarante, Porto
+Marco de Canaveses, Porto
+Baião, Porto
+Braga
+Guimarães, Braga
+Barcelos, Braga
+Famalicão, Braga
+Esposende, Braga
+Amares, Braga
+Póvoa de Lanhoso, Braga
+Terras de Bouro, Braga
+Vieira do Minho, Braga
+Fafe, Braga
+Cabeceiras de Basto, Braga
+Celorico de Basto, Braga
+Coimbra
+Figueira da Foz, Coimbra
+Cantanhede, Coimbra
+Montemor-o-Velho, Coimbra
+Soure, Coimbra
+Condeixa-a-Nova, Coimbra
+Miranda do Corvo, Coimbra
+Lousã, Coimbra
+Góis, Coimbra
+Arganil, Coimbra
+Tábua, Coimbra
+Oliveira do Hospital, Coimbra
+Pampilhosa da Serra, Coimbra
+Penacova, Coimbra
+Vila Nova de Poiares, Coimbra
+Setúbal
+Almada, Setúbal
+Barreiro, Setúbal
+Seixal, Setúbal
+Sesimbra, Setúbal
+Palmela, Setúbal
+Montijo, Setúbal
+Alcochete, Setúbal
+Moita, Setúbal
+Santiago do Cacém, Setúbal
+Grândola, Setúbal
+Sines, Setúbal
+Alcácer do Sal, Setúbal
+Aveiro
+Ílhavo, Aveiro
+Ovar, Aveiro
+Águeda, Aveiro
+Albergaria-a-Velha, Aveiro
+Estarreja, Aveiro
+Murtosa, Aveiro
+Oliveira do Bairro, Aveiro
+Vagos, Aveiro
+Sever do Vouga, Aveiro
+Arouca, Aveiro
+Espinho, Aveiro
+São João da Madeira, Aveiro
+Vale de Cambra, Aveiro
+Santa Maria da Feira, Aveiro
+Oliveira de Azeméis, Aveiro
+Viseu
+Mangualde, Viseu
+Nelas, Viseu
+Tondela, Viseu
+Santa Comba Dão, Viseu
+Carregal do Sal, Viseu
+Mortágua, Viseu
+Penalva do Castelo, Viseu
+Resende, Viseu
+Castro Daire, Viseu
+São Pedro do Sul, Viseu
+Vouzela, Viseu
+Oliveira de Frades, Viseu
+Sátão, Viseu
+Vila Nova de Paiva, Viseu
+Évora
+Estremoz, Évora
+Reguengos de Monsaraz, Évora
+Montemor-o-Novo, Évora
+Vendas Novas, Évora
+Arraiolos, Évora
+Mora, Évora
+Mourão, Évora
+Portel, Évora
+Redondo, Évora
+Viana do Alentejo, Évora
+Borba, Évora
+Alandroal, Évora
+Faro
+Loulé, Faro
+Portimão, Faro
+Lagos, Faro
+Albufeira, Faro
+Olhão, Faro
+Tavira, Faro
+Silves, Faro
+Vila Real de Santo António, Faro
+Lagoa, Faro
+Monchique, Faro
+Aljezur, Faro
+Castro Marim, Faro
+Alcoutim, Faro
+São Brás de Alportel, Faro
+Leiria
+Marinha Grande, Leiria
+Pombal, Leiria
+Alcobaça, Leiria
+Caldas da Rainha, Leiria
+Nazaré, Leiria
+Óbidos, Leiria
+Peniche, Leiria
+Porto de Mós, Leiria
+Batalha, Leiria
+Pedrógão Grande, Leiria
+Castanheira de Pêra, Leiria
+Ansião, Leiria
+Alvaiázere, Leiria
+Santarém
+Almeirim, Santarém
+Rio Maior, Santarém
+Cartaxo, Santarém
+Torres Novas, Santarém
+Entroncamento, Santarém
+Tomar, Santarém
+Abrantes, Santarém
+Constância, Santarém
+Salvaterra de Magos, Santarém
+Alpiarça, Santarém
+Benavente, Santarém
+Coruche, Santarém
+Chamusca, Santarém
+Golegã, Santarém
+Ourém, Santarém
+Beja
+Odemira, Beja
+Moura, Beja
+Serpa, Beja
+Cuba, Beja
+Ferreira do Alentejo, Beja
+Vidigueira, Beja
+Aljustrel, Beja
+Alvito, Beja
+Barrancos, Beja
+Mértola, Beja
+Castro Verde, Beja
+Almodôvar, Beja
+Portalegre
+Elvas, Portalegre
+Ponte de Sor, Portalegre
+Nisa, Portalegre
+Alter do Chão, Portalegre
+Arronches, Portalegre
+Avis, Portalegre
+Campo Maior, Portalegre
+Castelo de Vide, Portalegre
+Crato, Portalegre
+Fronteira, Portalegre
+Gavião, Portalegre
+Marvão, Portalegre
+Monforte, Portalegre
+Sousel, Portalegre
+Viana do Castelo
+Caminha, Viana do Castelo
+Valença, Viana do Castelo
+Monção, Viana do Castelo
+Melgaço, Viana do Castelo
+Paredes de Coura, Viana do Castelo
+Arcos de Valdevez, Viana do Castelo
+Ponte de Lima, Viana do Castelo
+Ponte da Barca, Viana do Castelo
+Vila Nova de Cerveira, Viana do Castelo
+Vila Real
+Chaves, Vila Real
+Peso da Régua, Vila Real
+Lamego, Vila Real
+Amarante, Vila Real
+Mondim de Basto, Vila Real
+Ribeira de Pena, Vila Real
+Sabrosa, Vila Real
+Santa Marta de Penaguião, Vila Real
+Vila Pouca de Aguiar, Vila Real
+Alijó, Vila Real
+Boticas, Vila Real
+Montalegre, Vila Real
+Murça, Vila Real
+Valpaços, Vila Real
+Bragança
+Mirandela, Bragança
+Macedo de Cavaleiros, Bragança
+Mogadouro, Bragança
+Torre de Moncorvo, Bragança
+Miranda do Douro, Bragança
+Vimioso, Bragança
+Vinhais, Bragança
+Alfândega da Fé, Bragança
+Carrazeda de Ansiães, Bragança
+Freixo de Espada à Cinta, Bragança
+Vila Flor, Bragança
+Castelo Branco
+Covilhã, Castelo Branco
+Fundão, Castelo Branco
+Belmonte, Castelo Branco
+Penamacor, Castelo Branco
+Idanha-a-Nova, Castelo Branco
+Vila Velha de Ródão, Castelo Branco
+Proença-a-Nova, Castelo Branco
+Oleiros, Castelo Branco
+Sertã, Castelo Branco
+Vila de Rei, Castelo Branco
+Guarda
+Seia, Guarda
+Gouveia, Guarda
+Manteigas, Guarda
+Celorico da Beira, Guarda
+Trancoso, Guarda
+Pinhel, Guarda
+Almeida, Guarda
+Figueira de Castelo Rodrigo, Guarda
+Sabugal, Guarda
+Mêda, Guarda
+Vila Nova de Foz Côa, Guarda
+Aguiar da Beira, Guarda
+Fornos de Algodres, Guarda
+Funchal
+Câmara de Lobos, Funchal
+Machico, Funchal
+Ribeira Brava, Funchal
+Caniço, Funchal
+Santa Cruz, Funchal
+São Vicente, Funchal
+Santana, Funchal
+Porto Moniz, Funchal
+Calheta, Funchal
+Ponta Delgada
+Ribeira Grande, Ponta Delgada
+Lagoa, Ponta Delgada
+Vila Franca do Campo, Ponta Delgada
+Povoação, Ponta Delgada
+Nordeste, Ponta Delgada

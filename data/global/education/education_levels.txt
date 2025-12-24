@@ -1,0 +1,14 @@
+# Education levels by job requirement level
+# Format: level:education_description
+# Levels: none, primary, secondary, vocational, bachelor, master, doctorate
+
+none:No formal education
+none:Primary school incomplete
+primary:Primary school certificate
+secondary:Secondary school (ESO)
+secondary:High school diploma (Bachillerato)
+vocational:Vocational training (FP Grado Medio)
+vocational:Technical certification (FP Grado Superior)
+bachelor:Bachelor's degree
+master:Master's degree
+doctorate:Doctorate (PhD)

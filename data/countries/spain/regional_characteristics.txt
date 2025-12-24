@@ -1,0 +1,20 @@
+# Regional and Historical Characteristics for Spain
+# Format: characteristic_text|min_age|max_age|gender|probability
+# gender: male, female, both
+# probability: 0.0-1.0 (chance of applying)
+# CRITICAL: Current year is 2025. Min_age = age when CONSCIOUSLY experienced (not just alive)
+# For "grew up" events: need 10+ years of conscious experience
+# For "witnessed/experienced" events: need to be 14+ (teenager awareness)
+# For "remembers" events: need to be 7+ (childhood memories)
+
+Completed mandatory military service (Mili)|45|75|male|0.95
+Grew up during Franco's dictatorship|63|999|both|1.0
+Witnessed the Spanish transition to democracy|54|999|both|0.9
+Lived through the 1992 Barcelona Olympics era|40|999|both|0.7
+Witnessed Spain joining the European Union (1986)|53|999|both|0.8
+Entered workforce during the 2008 economic crisis|35|42|both|0.6
+Grew up with the Peseta currency (pre-Euro)|41|999|both|0.9
+Remembers the 2004 Madrid train bombings|33|999|both|0.7
+Lived through the Spanish housing bubble|32|999|both|0.75
+Witnessed the 15-M movement (Indignados)|28|45|both|0.3
+Affected by youth unemployment crisis|27|40|both|0.4

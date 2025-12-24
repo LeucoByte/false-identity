@@ -1,0 +1,128 @@
+# --- Country status ---
+finished=true
+
+# --- Name rules ---
+name_order=first+surname
+surname_count=1
+surname_usage=always
+gendered_surnames=true
+
+# --- Date format ---
+date_format=DD.MM.YYYY
+
+# --- Age rules ---
+life_expectancy=73
+min_age=18
+max_age=73
+
+# --- Fertility rules ---
+# Female fertility limits (based on modern Russian social reality)
+# While biologically possible from 15, in modern Russia realistic from 18+
+female_fertility_min_age=18
+female_fertility_max_age=45
+# Parent age limits (to avoid unrealistic parent-child gaps)
+parent_min_age_gap=18
+parent_max_age_gap=45
+
+# --- Phone rules ---
+phone_country_code=+7
+phone_length=10
+phone_mobile_prefixes=900,901,902,903,904,905,906,909,910,911,912,913,914,915,916,917,918,919,920,921,922,923,924,925,926,927,928,929,930,931,932,933,934,936,937,938,939,950,951,952,953,958,960,961,962,963,964,965,966,967,968,969,977,978,980,981,982,983,984,985,987,988,989,991,992,993,994,995,996,999
+phone_format=(###) ###-##-##
+
+# --- Physical characteristics ---
+# Format: ColorName:Probability (probabilities should sum to 100)
+hair_colors=Dark Brown:30,Brown:25,Light Brown:20,Dark Blonde:12,Blonde:8,Light Blonde:3,Black:1,Red:0.5,Gray:0.3,White:0.2
+eye_colors=Blue:45,Gray:20,Green:15,Light Brown:10,Hazel:5,Brown:3,Dark Brown:2
+skin_tones=Light:75,Fair:20,Medium:4,Olive:0.8,Tan:0.2
+
+# --- Religion ---
+# Format: Religion:Probability (based on Russian demographics)
+religions=Russian Orthodox:41,Atheist:38,Agnostic:13,Muslim:6.5,Protestant:1,Catholic:0.3,Other:0.2
+
+# --- Family configuration ---
+# Average number of children in Russia
+average_children=1.5
+min_children=1
+max_children=3
+
+# Siblings configuration (based on average_children)
+average_siblings=1.5
+min_siblings=0
+max_siblings=3
+sibling_probability=70
+
+# --- Employment configuration ---
+# Unemployment and jobless probabilities
+unemployment_rate=5.5
+jobless_rate=2.0
+
+# --- Death Probability Configuration ---
+# Age-based death probabilities for family members (%)
+# Format: age_bucket:probability
+# Parents death probability (based on identity's age)
+death_prob_parents_very_young=2
+death_prob_parents_young_adults=5
+death_prob_parents_adults=30
+death_prob_parents_middle_aged=55
+death_prob_parents_older_adults=75
+death_prob_parents_seniors=90
+death_prob_parents_elderly=98
+
+# Children death probability
+death_prob_children_very_young=1
+death_prob_children_young_adults=2
+death_prob_children_adults=3
+death_prob_children_middle_aged=4
+death_prob_children_older_adults=6
+death_prob_children_seniors=8
+death_prob_children_elderly=10
+
+# Siblings death probability (higher in Russia due to lower life expectancy)
+death_prob_siblings_very_young=1
+death_prob_siblings_young_adults=3
+death_prob_siblings_adults=6
+death_prob_siblings_middle_aged=10
+death_prob_siblings_older_adults=18
+death_prob_siblings_seniors=30
+death_prob_siblings_elderly=45
+
+# --- Currency ---
+currency_symbol=₽
+currency_code=RUB
+
+# --- Social Class Configuration ---
+# Format: ClassName:Probability (probabilities should sum to 100)
+# Based on Russian socioeconomic distribution
+social_classes=low:35,middle:45,upper-middle:15,high:5
+
+# Salary ranges per social class (annual, in rubles)
+# Format: min,max
+salary_low=360000,720000
+salary_middle=720000,1800000
+salary_upper-middle=1800000,4800000
+salary_high=4800000,15000000
+
+# Pension ranges per social class (annual, in rubles)
+# Typically 40-60% of previous salary (lower than Spain)
+# Format: min,max
+pension_low=180000,400000
+pension_middle=400000,900000
+pension_upper-middle=900000,2400000
+pension_high=2400000,7500000
+
+# --- Language Configuration ---
+# Minimum and maximum number of languages (including native)
+min_languages=1
+max_languages=4
+
+# Languages spoken in Russia and commonly taught
+# Format: Language:Probability
+# Native language (Russian) is always included automatically
+available_languages=English:45,German:15,French:10,Ukrainian:12,Belarusian:8,Tatar:6,Kazakh:4,Chinese:2,Spanish:1.5,Italian:1
+
+# Language level probabilities
+# Format: Level:Probability (for non-native languages)
+language_level_basic=35
+language_level_intermediate=45
+language_level_advanced=20
