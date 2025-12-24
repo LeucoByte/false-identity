@@ -93,6 +93,9 @@ False Identity Generator is a sophisticated Python-based system for creating rea
 
 **Completed Countries:**
 - 🇪🇸 **Spain** - Fully implemented with comprehensive datasets
+- 🇷🇺 **Russia** - Fully implemented with Cyrillic names and cultural characteristics
+- 🇹🇭 **Thailand** - Fully implemented with Thai script and regional features
+- 🇨🇳 **China** - Fully implemented with one-child policy logic and Pinyin romanization
 
 **Planned Countries:**
 - Additional countries in development

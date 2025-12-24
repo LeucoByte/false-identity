@@ -1754,7 +1754,11 @@ class IdentityGenerator:
 
             # CRITICAL: Track used child ages to prevent impossible duplicates
             # If two children have same age, they MUST be twins with exact same birth date
+            # LIMIT: Max 2 children per birth date (twins only, no triplets unless special case)
             used_child_ages = {}  # age -> birth_date (for twins tracking)
+            birth_date_counts = {}  # birth_date -> count (to limit twins/triplets)
+            used_child_names = set()  # NEVER allow duplicate child names
+            used_child_pinyin = set()  # For China: also prevent same pinyin
 
             # Generate children for each marriage
             for marriage_num in range(1, total_marriages + 1):
@@ -1773,7 +1777,39 @@ class IdentityGenerator:
 
                 for _ in range(num_children_this_marriage):
                     child_gender = random.choice(['male', 'female'])
-                    child_name = self.loader.load_name_by_age(country, child_gender, age, bucket_offset=-2)
+
+                    # Generate unique child name (never duplicate, and for China never duplicate pinyin)
+                    max_name_attempts = 50
+                    for name_attempt in range(max_name_attempts):
+                        child_name = self.loader.load_name_by_age(country, child_gender, age, bucket_offset=-2)
+
+                        # Check exact name match
+                        if child_name in used_child_names:
+                            continue
+
+                        # For China: also check pinyin
+                        if country.lower() == 'china':
+                            try:
+                                from pypinyin import lazy_pinyin, Style
+                                pinyin_list = lazy_pinyin(child_name, style=Style.NORMAL)
+                                pinyin_name = ''.join([p for p in pinyin_list if p.strip()]).lower()
+
+                                if pinyin_name in used_child_pinyin:
+                                    continue
+                                else:
+                                    used_child_pinyin.add(pinyin_name)
+                                    used_child_names.add(child_name)
+                                    break
+                            except:
+                                used_child_names.add(child_name)
+                                break
+                        else:
+                            used_child_names.add(child_name)
+                            break
+                    else:
+                        # Fallback: add suffix to make unique
+                        child_name = f"{child_name}{len(used_child_names)}"
+                        used_child_names.add(child_name)
 
                     # Determine mother age from marriage partner
                     if gender == 'female':
@@ -1933,15 +1969,40 @@ class IdentityGenerator:
 
                     # CRITICAL: Check if another child already has this age (twins)
                     # If so, they MUST have the same birth date
+                    # LIMIT: Max 2 children per birth date (twins only, rarely triplets)
                     if child_age in used_child_ages:
-                        # TWINS! Use the exact same birth date as the sibling
-                        birth_date = used_child_ages[child_age]
-                        is_twin = True
+                        # Check if this would create triplets (3+ children with same birth date)
+                        potential_birth_date = used_child_ages[child_age]
+                        existing_count = birth_date_counts.get(potential_birth_date, 0)
+
+                        # For China specifically: triplets at age 45+ is extremely rare
+                        # Allow max 2 twins, but regenerate age if would create triplets
+                        if existing_count >= 2:
+                            # Already have twins with this birth date
+                            # Generate a different age for this child (adjust by 1 year)
+                            if child_age + 1 <= max_child_age:
+                                child_age = child_age + 1
+                            elif child_age - 1 >= min_child_age:
+                                child_age = child_age - 1
+                            else:
+                                # Can't adjust, skip this child
+                                continue
+
+                            # Generate new birth date for adjusted age
+                            birth_date, _ = self._generate_birth_date(child_age, current_year, date_format)
+                            is_twin = False
+                        else:
+                            # TWINS! Use the exact same birth date as the sibling
+                            birth_date = potential_birth_date
+                            is_twin = True
                     else:
                         # First child of this age - generate new birth date
                         birth_date, _ = self._generate_birth_date(child_age, current_year, date_format)
-                        used_child_ages[child_age] = birth_date  # Track it
                         is_twin = False
+
+                    # Track this birth date
+                    used_child_ages[child_age] = birth_date
+                    birth_date_counts[birth_date] = birth_date_counts.get(birth_date, 0) + 1
 
                     # Check if child is deceased
                     child_deceased = random.random() < (children_death_prob / 100.0)
@@ -2022,16 +2083,43 @@ class IdentityGenerator:
             # Track already used sibling ages (allow duplicates for twins) and names (NEVER duplicate)
             used_sibling_ages = {}  # age -> count (for twins/triplets detection)
             used_sibling_names = set()  # NEVER allow duplicate names
+            used_sibling_pinyin = set()  # For China: also prevent same pinyin
 
             for _ in range(num_siblings):
                 # Siblings are similar age - use same age bucket as identity
                 sibling_gender = random.choice(['male', 'female'])
 
-                # Generate unique name - NEVER duplicate
+                # Generate unique name - NEVER duplicate (and for China, never duplicate pinyin)
                 max_name_attempts = 50
                 for name_attempt in range(max_name_attempts):
                     sibling_name = self.loader.load_name_by_age(country, sibling_gender, age, bucket_offset=0)
-                    if sibling_name not in used_sibling_names:
+
+                    # Check exact name match (all countries)
+                    if sibling_name in used_sibling_names:
+                        continue
+
+                    # For China: also check pinyin to avoid 子萱 (Zixuan) and 子轩 (Zixuan)
+                    if country.lower() == 'china':
+                        try:
+                            from pypinyin import lazy_pinyin, Style
+                            pinyin_list = lazy_pinyin(sibling_name, style=Style.NORMAL)
+                            # Filter out spaces and join to get full pinyin
+                            pinyin_name = ''.join([p for p in pinyin_list if p.strip()]).lower()
+
+                            if pinyin_name in used_sibling_pinyin:
+                                # Same pinyin, try another name
+                                continue
+                            else:
+                                # Unique pinyin, use this name
+                                used_sibling_pinyin.add(pinyin_name)
+                                used_sibling_names.add(sibling_name)
+                                break
+                        except:
+                            # If pypinyin fails, just check exact match
+                            used_sibling_names.add(sibling_name)
+                            break
+                    else:
+                        # Not China, just check exact match
                         used_sibling_names.add(sibling_name)
                         break
                 else:

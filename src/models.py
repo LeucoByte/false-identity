@@ -116,13 +116,14 @@ def transliterate(text: str) -> str:
     return ''.join(result)
 
 
-def display_with_transliteration(text: str, country: str = "unknown") -> str:
+def display_with_transliteration(text: str, country: str = "unknown", is_city: bool = False) -> str:
     """
     Display text with transliteration if it contains non-ASCII characters.
 
     Args:
         text: Original text
         country: Country code to determine proper transliteration method
+        is_city: If True and country is China, join Pinyin without spaces
 
     Returns:
         "Original (Transliterated)" for non-Latin scripts, just original for Latin
@@ -135,6 +136,10 @@ def display_with_transliteration(text: str, country: str = "unknown") -> str:
 
     # Get transliterated version using centralized function
     transliterated = translate(text, country)
+
+    # For Chinese cities, remove spaces in Pinyin (e.g., "Tai Yuan" → "Taiyuan")
+    if country == 'china' and is_city and PYPINYIN_AVAILABLE:
+        transliterated = transliterated.replace(' ', '')
 
     # If transliteration failed or returned same text, show only original
     if transliterated == text:
@@ -546,7 +551,7 @@ class Identity:
         religion_line = pad_line("Religion:        ", self.religion, BOLD + WHITE, RESET)
 
         # Location and contact
-        display_city = display_with_transliteration(self.city, self.country)
+        display_city = display_with_transliteration(self.city, self.country, is_city=True)
         location_text = f"{display_city}, {RED}{self.country.upper()}{RESET}"
         location_line = pad_line("Location:        ", location_text)
 
