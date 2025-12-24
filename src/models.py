@@ -17,6 +17,42 @@ from config import (
     BOX_WIDTH, CONTENT_WIDTH, GREEN
 )
 
+# Import transliteration libraries
+try:
+    from pythainlp.transliterate import romanize as thai_romanize
+    PYTHAINLP_AVAILABLE = True
+except ImportError:
+    PYTHAINLP_AVAILABLE = False
+
+try:
+    from pypinyin import lazy_pinyin, Style
+    PYPINYIN_AVAILABLE = True
+except ImportError:
+    PYPINYIN_AVAILABLE = False
+
+try:
+    import cutlet
+    CUTLET_AVAILABLE = True
+    # Initialize Japanese romanizer
+    try:
+        katsu = cutlet.Cutlet()
+    except:
+        CUTLET_AVAILABLE = False
+except ImportError:
+    CUTLET_AVAILABLE = False
+
+try:
+    from transliterate import translit
+    TRANSLITERATE_AVAILABLE = True
+except ImportError:
+    TRANSLITERATE_AVAILABLE = False
+
+try:
+    from unidecode import unidecode
+    UNIDECODE_AVAILABLE = True
+except ImportError:
+    UNIDECODE_AVAILABLE = False
+
 
 # Transliteration map for Cyrillic to Latin
 CYRILLIC_TO_LATIN = {
@@ -80,39 +116,166 @@ def transliterate(text: str) -> str:
     return ''.join(result)
 
 
-def display_with_transliteration(text: str) -> str:
+def display_with_transliteration(text: str, country: str = "unknown") -> str:
     """
     Display text with transliteration if it contains non-ASCII characters.
 
     Args:
         text: Original text
+        country: Country code to determine proper transliteration method
 
     Returns:
-        "Original (Transliterated)" if non-ASCII, otherwise just the original text
+        "Original (Transliterated)" for non-Latin scripts, just original for Latin
     """
     # Check if text contains non-ASCII characters
     has_non_ascii = any(ord(char) > 127 for char in text)
 
-    if has_non_ascii:
-        transliterated = transliterate(text)
-        return f"{text} ({transliterated})"
-    else:
+    if not has_non_ascii:
         return text
 
+    # Get transliterated version using centralized function
+    transliterated = translate(text, country)
 
-def display_name_with_transliteration(name: str, surname: str) -> str:
+    # If transliteration failed or returned same text, show only original
+    if transliterated == text:
+        return text
+
+    # Show both original and transliteration
+    return f"{text} ({transliterated})"
+
+
+def display_name_with_transliteration(name: str, surname: str, country: str = "unknown") -> str:
     """
     Display full name with transliteration if it contains non-ASCII characters.
 
     Args:
         name: First name
         surname: Surname(s)
+        country: Country code for proper transliteration
 
     Returns:
         Full name with transliteration if needed
     """
     full_name = f"{name} {surname}"
-    return display_with_transliteration(full_name)
+    return display_with_transliteration(full_name, country)
+
+
+def translate(text: str, country: str) -> str:
+    """
+    Centralized transliteration function for all countries.
+    Uses appropriate library based on country's writing system.
+
+    Args:
+        text: Text to transliterate (name, surname, etc.)
+        country: Country code (lowercase, e.g., 'thailand', 'china', 'russia')
+
+    Returns:
+        Transliterated text in Latin alphabet
+
+    Note:
+        - Returns original text if country uses Latin alphabet
+        - Returns original text if required library is not available
+        - Falls back to unidecode for unsupported scripts
+    """
+    country = country.lower().strip()
+
+    # Countries that use Latin alphabet - return as-is
+    latin_countries = {
+        'spain', 'argentina', 'australia', 'belgium', 'brazil',
+        'france', 'germany', 'italy', 'mexico', 'netherlands',
+        'poland', 'portugal', 'sweden', 'turkey', 'uk', 'usa',
+        'vietnam'  # Uses Latin with diacritics
+    }
+
+    if country in latin_countries:
+        return text
+
+    # Check if text is already in Latin alphabet (no transliteration needed)
+    if text.isascii():
+        return text
+
+    # Country-specific transliteration using appropriate libraries
+    try:
+        # THAILAND - Thai script (ไทย)
+        if country == 'thailand':
+            if PYTHAINLP_AVAILABLE:
+                # Use pythainlp for proper RTGS transliteration
+                return thai_romanize(text, engine='royin')
+            else:
+                # Fallback: return original (better than broken transliteration)
+                return text
+
+        # CHINA - Chinese characters (汉字)
+        elif country == 'china':
+            if PYPINYIN_AVAILABLE:
+                # Use pypinyin for Pinyin transliteration
+                pinyin_list = lazy_pinyin(text, style=Style.NORMAL)
+                return ' '.join(pinyin_list).title()
+            else:
+                # Fallback to unidecode
+                if UNIDECODE_AVAILABLE:
+                    return unidecode(text)
+                return text
+
+        # JAPAN - Japanese (Kanji/Hiragana/Katakana)
+        elif country == 'japan':
+            if CUTLET_AVAILABLE:
+                # Use cutlet for Romaji transliteration
+                try:
+                    return katsu.romaji(text)
+                except:
+                    pass
+            # Fallback to unidecode
+            if UNIDECODE_AVAILABLE:
+                return unidecode(text)
+            return text
+
+        # RUSSIA - Cyrillic (Кириллица)
+        elif country == 'russia':
+            if TRANSLITERATE_AVAILABLE:
+                # Use transliterate library for proper Russian romanization
+                try:
+                    return translit(text, 'ru', reversed=True)
+                except:
+                    pass
+            # Fallback to manual Cyrillic map
+            return transliterate(text)
+
+        # GREECE - Greek alphabet (Ελληνικά)
+        elif country == 'greece':
+            if TRANSLITERATE_AVAILABLE:
+                # Use transliterate library for Greek
+                try:
+                    return translit(text, 'el', reversed=True)
+                except:
+                    pass
+            # Fallback to unidecode
+            if UNIDECODE_AVAILABLE:
+                return unidecode(text)
+            return text
+
+        # INDIA - Multiple scripts (but names usually pre-romanized)
+        elif country == 'india':
+            # Indian names are typically already romanized in international contexts
+            # If not ASCII, use unidecode as fallback
+            if UNIDECODE_AVAILABLE:
+                return unidecode(text)
+            return text
+
+        # UNKNOWN COUNTRY - fallback to unidecode
+        else:
+            if UNIDECODE_AVAILABLE:
+                return unidecode(text)
+            return text
+
+    except Exception as e:
+        # If any error occurs, fallback to unidecode or return original
+        try:
+            if UNIDECODE_AVAILABLE:
+                return unidecode(text)
+        except:
+            pass
+        return text
 
 
 def calculate_time_ago(date_str: str) -> str:
@@ -120,14 +283,35 @@ def calculate_time_ago(date_str: str) -> str:
     Calculate time elapsed from a date string to now.
 
     Args:
-        date_str: Date in DD/MM/YYYY format
+        date_str: Date in DD/MM/YYYY, MM/DD/YYYY, or YYYY/MM/DD format
 
     Returns:
         String like "(2 years ago)" or "(6 months ago)"
     """
     try:
-        # Parse DD/MM/YYYY format
-        day, month, year = map(int, date_str.split('/'))
+        parts = date_str.split('/')
+
+        if len(parts) != 3:
+            return ""
+
+        # Try to detect format
+        # YYYY/MM/DD: year is 4 digits and first
+        if len(parts[0]) == 4:
+            year, month, day = map(int, parts)
+        # DD/MM/YYYY or MM/DD/YYYY: year is 4 digits and last
+        elif len(parts[2]) == 4:
+            # If first part > 12, it's DD/MM/YYYY
+            if int(parts[0]) > 12:
+                day, month, year = map(int, parts)
+            # If second part > 12, it's MM/DD/YYYY
+            elif int(parts[1]) > 12:
+                month, day, year = map(int, parts)
+            # Ambiguous - assume DD/MM/YYYY
+            else:
+                day, month, year = map(int, parts)
+        else:
+            return ""
+
         past_date = datetime(year, month, day)
         now = datetime.now()
 
@@ -152,7 +336,7 @@ def calculate_time_ago(date_str: str) -> str:
                 return "(1 day ago)"
             else:
                 return f"({days} days ago)"
-    except:
+    except Exception as e:
         return ""
 
 
@@ -307,7 +491,7 @@ class Identity:
 
         # Build formatted lines
         # Display names with transliteration if non-ASCII (e.g., "Имя (Imya)")
-        display_name = display_with_transliteration(self.full_name)
+        display_name = display_with_transliteration(self.full_name, self.country)
         name_line = pad_line("Full Name:       ", display_name, BOLD + YELLOW, RESET)
         gender_line = pad_line("Gender:          ", self.gender.capitalize())
         dob_text = f"{self.date_of_birth} ({self.age} years old)"
@@ -324,7 +508,7 @@ class Identity:
         religion_line = pad_line("Religion:        ", self.religion, BOLD + WHITE, RESET)
 
         # Location and contact
-        display_city = display_with_transliteration(self.city)
+        display_city = display_with_transliteration(self.city, self.country)
         location_text = f"{display_city}, {RED}{self.country.upper()}{RESET}"
         location_line = pad_line("Location:        ", location_text)
 
@@ -332,7 +516,7 @@ class Identity:
         postal_text = self.postal_code if self.postal_code else 'N/A'
         postal_line = pad_line("Postal Code:     ", postal_text, BOLD + WHITE, RESET)
 
-        display_nearby = display_with_transliteration(self.nearby_town) if self.nearby_town else 'N/A'
+        display_nearby = display_with_transliteration(self.nearby_town, self.country) if self.nearby_town else 'N/A'
         nearby_line = pad_line("Nearby:          ", display_nearby, BOLD + YELLOW, RESET)
 
         # Job display - always show both current and previous
@@ -514,7 +698,7 @@ class Identity:
                         # Deceased: show birth-death dates and age at death
                         death_date = father.get('death_date', 'N/A')
                         time_ago = calculate_time_ago(death_date) if death_date != 'N/A' else ""
-                        father_text = f"{display_name_with_transliteration(father['name'], father['surname'])} (Deceased)"
+                        father_text = f"{display_name_with_transliteration(father['name'], father['surname'], self.country)} (Deceased)"
                         family_block += pad_line("Father:          ", father_text, BOLD + RED, RESET) + "\n"
                         death_info = f"{father.get('birth_date', 'N/A')} - {death_date} {time_ago} (Died at {father.get('age_at_death', 'N/A')} years old)"
                         family_block += pad_line("                 ", death_info, WHITE, RESET) + "\n"
@@ -522,7 +706,7 @@ class Identity:
                             family_block += pad_line("                 ", f"Cause: {father['cause_of_death']}", WHITE, RESET) + "\n"
                     else:
                         # Living: show birth date and current age
-                        father_text = display_name_with_transliteration(father['name'], father['surname'])
+                        father_text = display_name_with_transliteration(father['name'], father['surname'], self.country)
                         current_age = father.get('current_age', 'N/A')
                         family_block += pad_line("Father:          ", father_text, BOLD + WHITE, RESET) + "\n"
                         family_block += pad_line("                 ", f"Alive - {father.get('birth_date', 'N/A')} ({current_age} years old)", WHITE, RESET) + "\n"
@@ -535,7 +719,7 @@ class Identity:
                         # Deceased: show birth-death dates and age at death
                         death_date = mother.get('death_date', 'N/A')
                         time_ago = calculate_time_ago(death_date) if death_date != 'N/A' else ""
-                        mother_text = f"{display_name_with_transliteration(mother['name'], mother['surname'])} (Deceased)"
+                        mother_text = f"{display_name_with_transliteration(mother['name'], mother['surname'], self.country)} (Deceased)"
                         family_block += pad_line("Mother:          ", mother_text, BOLD + RED, RESET) + "\n"
                         death_info = f"{mother.get('birth_date', 'N/A')} - {death_date} {time_ago} (Died at {mother.get('age_at_death', 'N/A')} years old)"
                         family_block += pad_line("                 ", death_info, WHITE, RESET) + "\n"
@@ -543,7 +727,7 @@ class Identity:
                             family_block += pad_line("                 ", f"Cause: {mother['cause_of_death']}", WHITE, RESET) + "\n"
                     else:
                         # Living: show birth date and current age
-                        mother_text = display_name_with_transliteration(mother['name'], mother['surname'])
+                        mother_text = display_name_with_transliteration(mother['name'], mother['surname'], self.country)
                         current_age = mother.get('current_age', 'N/A')
                         family_block += pad_line("Mother:          ", mother_text, BOLD + WHITE, RESET) + "\n"
                         family_block += pad_line("                 ", f"Alive - {mother.get('birth_date', 'N/A')} ({current_age} years old)", WHITE, RESET) + "\n"
@@ -575,11 +759,11 @@ class Identity:
 
                     if sibling.get("deceased"):
                         # Deceased sibling
-                        sibling_text = f"{display_name_with_transliteration(sibling['name'], sibling_surname_str)} ({sibling['gender']}){twin_marker} (Deceased)".strip()
+                        sibling_text = f"{display_name_with_transliteration(sibling['name'], sibling_surname_str, self.country)} ({sibling['gender']}){twin_marker} (Deceased)".strip()
                         color = BOLD + RED
                     else:
                         # Living sibling
-                        sibling_text = f"{display_name_with_transliteration(sibling['name'], sibling_surname_str)} ({sibling['gender']}){twin_marker}".strip()
+                        sibling_text = f"{display_name_with_transliteration(sibling['name'], sibling_surname_str, self.country)} ({sibling['gender']}){twin_marker}".strip()
                         color = BOLD + YELLOW
 
                     if i == 0:
@@ -607,7 +791,7 @@ class Identity:
             if marital_status in ("Married", "Girlfriend", "Boyfriend") and self.family.get("partner"):
                 partner = self.family["partner"]
                 partner_surname_str = partner.get("surname", "")
-                partner_text = f"{display_name_with_transliteration(partner['name'], partner_surname_str)} ({partner['gender']})"
+                partner_text = f"{display_name_with_transliteration(partner['name'], partner_surname_str, self.country)} ({partner['gender']})"
                 family_block += pad_line("Partner:         ", partner_text, BOLD + WHITE, RESET) + "\n"
 
                 # Show birth date and age for partner
@@ -617,8 +801,10 @@ class Identity:
                 # Show relationship start date
                 if partner.get('start_date'):
                     time_ago = calculate_time_ago(partner['start_date'])
-                    # Remove " ago" and add parentheses
-                    time_display = time_ago.replace(" ago", "")
+                    # Remove parentheses and " ago", then add back properly
+                    # calculate_time_ago returns "(2 years ago)"
+                    # We want "2024/01/02 (2 years ago)"
+                    time_display = time_ago.strip("()").strip()
                     if marital_status == "Married":
                         family_block += pad_line("Marriage Date:   ", f"{partner['start_date']} ({time_display})", BOLD + YELLOW, RESET) + "\n"
                     else:  # Girlfriend/Boyfriend
@@ -639,7 +825,7 @@ class Identity:
                     # Show ex-partner info
                     if ex.get("deceased"):
                         # Ex-partner is deceased
-                        ex_text = f"{display_name_with_transliteration(ex['name'], ex_surname_str)} ({ex['gender']}) (Deceased)"
+                        ex_text = f"{display_name_with_transliteration(ex['name'], ex_surname_str, self.country)} ({ex['gender']}) (Deceased)"
                         family_block += pad_line("  Ex-Partner:    ", ex_text, BOLD + RED, RESET) + "\n"
                         death_date = ex.get('death_date', 'N/A')
                         time_ago = calculate_time_ago(death_date) if death_date != 'N/A' else ""
@@ -647,7 +833,7 @@ class Identity:
                         family_block += pad_line("                 ", death_info, YELLOW, RESET) + "\n"
                     else:
                         # Ex-partner is alive
-                        ex_text = f"{display_name_with_transliteration(ex['name'], ex_surname_str)} ({ex['gender']})"
+                        ex_text = f"{display_name_with_transliteration(ex['name'], ex_surname_str, self.country)} ({ex['gender']})"
                         family_block += pad_line("  Ex-Partner:    ", ex_text, YELLOW, RESET) + "\n"
                         current_age = ex.get('current_age', 'N/A')
                         family_block += pad_line("                 ", f"Alive - {ex.get('birth_date', 'N/A')} ({current_age} years old)", YELLOW, RESET) + "\n"
@@ -673,7 +859,7 @@ class Identity:
                 family_block += pad_line("Past Relations:  ", "", BOLD + MAGENTA, RESET) + "\n"
                 for i, rel in enumerate(relationship_history, 1):
                     rel_surname_str = rel.get("surname", "")
-                    rel_text = f"{display_name_with_transliteration(rel['name'], rel_surname_str)} ({rel['gender']})"
+                    rel_text = f"{display_name_with_transliteration(rel['name'], rel_surname_str, self.country)} ({rel['gender']})"
                     family_block += pad_line(f"  [{i}] Partner:   ", rel_text, YELLOW, RESET) + "\n"
 
                     # Show birth date and current age
@@ -756,10 +942,10 @@ class Identity:
                             child_surname_str = child.get("surname", "")
 
                         if child.get("deceased"):
-                            child_text = f"{display_name_with_transliteration(child['name'], child_surname_str)} ({child['gender']}) (Deceased)".strip()
+                            child_text = f"{display_name_with_transliteration(child['name'], child_surname_str, self.country)} ({child['gender']}) (Deceased)".strip()
                             color = BOLD + RED
                         else:
-                            child_text = f"{display_name_with_transliteration(child['name'], child_surname_str)} ({child['gender']})".strip()
+                            child_text = f"{display_name_with_transliteration(child['name'], child_surname_str, self.country)} ({child['gender']})".strip()
                             color = BOLD + WHITE
 
                         if i == 0:

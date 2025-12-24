@@ -8,3 +8,14 @@ requests>=2.31.0
 
 # Unicode character width calculation
 wcwidth
+
+# Transliteration libraries
+pythainlp>=5.0.0  # Thai transliteration (RTGS)
+pypinyin>=0.51.0  # Chinese transliteration (Pinyin)
+cutlet>=0.5.0  # Japanese transliteration (Romaji)
+transliterate>=1.10.2  # Greek, Russian, and other scripts
+unidecode>=1.3.8  # General Unicode to ASCII normalization
+
+# Note: gedit must be installed at system level
+# Install with: sudo apt-get install gedit (Linux)
+# or brew install gedit (macOS)

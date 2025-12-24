@@ -13,26 +13,17 @@ from typing import List
 
 from config import IDENTITIES_DIR
 
-# Import Identity after defining transliterate to avoid circular dependency
-from models import Identity
-
-
-# Wrapper for transliterate from models to use in this module
-def transliterate(text: str) -> str:
-    """
-    Transliterate Cyrillic characters to Latin.
-    Import from models module when needed.
-    """
-    from models import transliterate as _transliterate
-    return _transliterate(text)
+# Import Identity and translate function
+from models import Identity, translate
 
 
 def generate_filename(identity: Identity) -> str:
     """
     Generate a coherent filename for an identity.
 
-    For Spanish (Latin characters): FirstName_Surname1_Surname2_timestamp.json
-    For Russian (Cyrillic): Transliterated_Name_Surname_timestamp.json
+    Uses transliterated names for non-Latin scripts (Russian, Thai, Chinese, etc.)
+    For Latin alphabet countries (Spanish, etc.): FirstName_Surname1_Surname2_timestamp.json
+    For non-Latin countries: Transliterated_Name_Surname_timestamp.json
 
     Args:
         identity: Identity object
@@ -42,23 +33,27 @@ def generate_filename(identity: Identity) -> str:
     """
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
+    # Get country for proper transliteration
+    country = identity.country if hasattr(identity, 'country') else 'unknown'
+
     # Get first name and surnames
     first_name = identity.first_name
     surnames = identity.surnames if hasattr(identity, 'surnames') else []
 
+    # Transliterate names to Latin alphabet
+    transliterated_first = translate(first_name, country)
+    transliterated_surnames = [translate(s, country) for s in surnames]
+
     # Build name parts
-    name_parts = [first_name]
-    if surnames:
-        name_parts.extend(surnames)
+    name_parts = [transliterated_first]
+    if transliterated_surnames:
+        name_parts.extend(transliterated_surnames)
 
     # Join with underscores
     full_name = '_'.join(name_parts)
 
-    # Transliterate if Cyrillic
-    full_name_clean = transliterate(full_name)
-
     # Remove any remaining non-alphanumeric characters (except underscores)
-    full_name_clean = re.sub(r'[^a-zA-Z0-9_]', '', full_name_clean)
+    full_name_clean = re.sub(r'[^a-zA-Z0-9_]', '', full_name)
 
     # Limit length to avoid overly long filenames (max 50 chars for name part)
     if len(full_name_clean) > 50:

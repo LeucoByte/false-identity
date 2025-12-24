@@ -320,6 +320,7 @@ def view_saved_identities():
         print(f"{BOLD}{YELLOW}Options:{RESET}")
         print(f"  [{RED}c{RESET}] View cultural considerations")
         print(f"  [{RED}a{RESET}] Add a note")
+        print(f"  [{RED}e{RESET}] Edit identity JSON (opens gedit)")
         print(f"  [{RED}r + Number{RESET}] Remove note (e.g., r1)")
         print(f"  [{RED}Enter{RESET}] Return to identity list")
         print()
@@ -339,6 +340,7 @@ def view_saved_identities():
             print(f"{BOLD}{YELLOW}Options:{RESET}")
             print(f"  [{RED}c{RESET}] View cultural considerations")
             print(f"  [{RED}a{RESET}] Add a note")
+            print(f"  [{RED}e{RESET}] Edit identity JSON (opens gedit)")
             print(f"  [{RED}r + Number{RESET}] Remove note (e.g., r1)")
             print(f"  [{RED}Enter{RESET}] Return to identity list")
             print()
@@ -354,6 +356,46 @@ def view_saved_identities():
                 save_identity(identity, filepath=str(files[idx]))
                 print(f"{GREEN}Note added successfully!{RESET}")
                 print()
+                input(f"{BOLD}Press Enter to continue...{RESET}")
+        elif note_choice.lower() == 'e':
+            # Edit identity JSON with gedit
+            json_path = str(files[idx])
+            try:
+                # Open gedit and wait for it to close
+                print(f"\n{YELLOW}Opening {json_path} in gedit...{RESET}")
+                print(f"{YELLOW}Edit the JSON file, save your changes, and close gedit to continue.{RESET}\n")
+                subprocess.run(['gedit', json_path], check=True)
+
+                # Reload identity from JSON
+                print(f"\n{GREEN}Reloading identity from file...{RESET}")
+                identity = load_identity(json_path)
+
+                # Clear and display updated identity
+                clear_screen()
+                print(f"{GREEN}Identity updated successfully!{RESET}\n")
+                print(identity.to_str_box())
+                print()
+
+                # Show options again
+                print(f"{BOLD}{YELLOW}Options:{RESET}")
+                print(f"  [{RED}c{RESET}] View cultural considerations")
+                print(f"  [{RED}a{RESET}] Add a note")
+                print(f"  [{RED}e{RESET}] Edit identity JSON (opens gedit)")
+                print(f"  [{RED}r + Number{RESET}] Remove note (e.g., r1)")
+                print(f"  [{RED}Enter{RESET}] Return to identity list")
+                print()
+                continue
+            except FileNotFoundError:
+                print(f"\n{RED}Error: gedit not found. Please install gedit:{RESET}")
+                print(f"{YELLOW}  sudo apt-get install gedit  (Debian/Ubuntu){RESET}")
+                print(f"{YELLOW}  brew install gedit  (macOS){RESET}\n")
+                input(f"{BOLD}Press Enter to continue...{RESET}")
+            except subprocess.CalledProcessError as e:
+                print(f"\n{RED}Error opening gedit: {e}{RESET}\n")
+                input(f"{BOLD}Press Enter to continue...{RESET}")
+            except Exception as e:
+                print(f"\n{RED}Error loading updated identity: {e}{RESET}\n")
+                print(f"{YELLOW}The JSON file may contain invalid data.{RESET}\n")
                 input(f"{BOLD}Press Enter to continue...{RESET}")
         elif note_choice.lower().startswith('r'):
             # Remove note

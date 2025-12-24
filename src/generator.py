@@ -12,7 +12,7 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import List, Optional, Dict, Any, Tuple
 
-from models import Identity, CountryRules
+from models import Identity, CountryRules, translate
 from config import DATA_DIR
 from data_loader import DataLoader
 
@@ -247,16 +247,18 @@ class IdentityGenerator:
         else:
             return "elderly"
 
-    def _generate_fake_email(self, first_name: str, surnames: List[str], dob: str) -> str:
+    def _generate_fake_email(self, first_name: str, surnames: List[str], dob: str, country: str = "unknown") -> str:
         """
         Generate a realistic fake email based on identity information.
 
         Uses common email patterns without dots (more realistic).
+        Transliterates non-Latin names to Latin alphabet for email compatibility.
 
         Args:
             first_name: Person's first name
             surnames: List of surnames
             dob: Date of birth string
+            country: Country code for proper transliteration
 
         Returns:
             Fake email address
@@ -278,8 +280,13 @@ class IdentityGenerator:
             text = ''.join(c for c in text if c.isalnum())
             return text
 
-        clean_first = clean_text(first_name)
-        clean_surnames = [clean_text(s) for s in surnames]
+        # Transliterate names to Latin alphabet first (for non-Latin scripts)
+        transliterated_first = translate(first_name, country)
+        transliterated_surnames = [translate(s, country) for s in surnames]
+
+        # Clean transliterated names
+        clean_first = clean_text(transliterated_first)
+        clean_surnames = [clean_text(s) for s in transliterated_surnames]
 
         # Extract year from date of birth
         year = ''
@@ -3253,8 +3260,8 @@ class IdentityGenerator:
         # Generate phone
         phone = self._generate_phone(rules)
 
-        # Generate email
-        email = self._generate_fake_email(first_name, selected_surnames, dob)
+        # Generate email (with transliteration for non-Latin scripts)
+        email = self._generate_fake_email(first_name, selected_surnames, dob, country)
 
         # Load cultural considerations
         considerations = self.loader.load_considerations(country)
