@@ -1,5 +1,8 @@
 # India Country Rules
 
+# --- Country status ---
+finished=true
+
 name_order=first+surname
 date_format=DD/MM/YYYY
 currency=₹
@@ -72,3 +75,15 @@ employment_status_employed=70
 employment_status_unemployed=8
 employment_status_student=12
 employment_status_retired=10
+
+# Salary ranges in INR (Indian Rupees) per year
+salary_low=180000,300000
+salary_middle=300000,600000
+salary_upper-middle=600000,1500000
+salary_high=1500000,5000000
+
+# Pension ranges in INR (Indian Rupees) per year
+pension_low=60000,120000
+pension_middle=120000,240000
+pension_upper-middle=240000,480000
+pension_high=480000,1000000

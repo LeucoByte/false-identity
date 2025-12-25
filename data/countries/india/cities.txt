@@ -4,47 +4,483 @@ Bandra, Mumbai|400050
 Borivali, Mumbai|400066
 Thane, Mumbai|400601
 Navi Mumbai, Mumbai|400614
+Powai, Mumbai|400076
+Malad, Mumbai|400064
+Goregaon, Mumbai|400062
+Juhu, Mumbai|400049
+Vile Parle, Mumbai|400056
+Kurla, Mumbai|400070
+Ghatkopar, Mumbai|400077
+Mulund, Mumbai|400080
+Vikhroli, Mumbai|400083
+Kandivali, Mumbai|400067
+Dahisar, Mumbai|400068
+Chembur, Mumbai|400071
+Santacruz, Mumbai|400054
+Khar, Mumbai|400052
+Versova, Mumbai|400061
+Jogeshwari, Mumbai|400060
+Matunga, Mumbai|400019
+Dadar, Mumbai|400014
+Parel, Mumbai|400012
+Lower Parel, Mumbai|400013
+Worli, Mumbai|400018
+Byculla, Mumbai|400027
+Grant Road, Mumbai|400007
+Marine Lines, Mumbai|400002
+Churchgate, Mumbai|400020
+Colaba, Mumbai|400005
 Delhi|110001
 Dwarka, Delhi|110075
 Rohini, Delhi|110085
 Noida, Delhi|201301
+Greater Noida, Delhi|201308
 Gurgaon, Delhi|122001
 Faridabad, Delhi|121001
+Ghaziabad, Delhi|201001
+Saket, Delhi|110017
+Vasant Kunj, Delhi|110070
+Janakpuri, Delhi|110058
+Rajouri Garden, Delhi|110027
+Pitampura, Delhi|110034
+Preet Vihar, Delhi|110092
+Laxmi Nagar, Delhi|110092
+Mayur Vihar, Delhi|110091
+Kalkaji, Delhi|110019
+Nehru Place, Delhi|110019
+Connaught Place, Delhi|110001
+Karol Bagh, Delhi|110005
+Chandni Chowk, Delhi|110006
+Shahdara, Delhi|110032
+Dilshad Garden, Delhi|110095
+Punjabi Bagh, Delhi|110026
+Paschim Vihar, Delhi|110063
+Uttam Nagar, Delhi|110059
+Najafgarh, Delhi|110043
+Narela, Delhi|110040
+Model Town, Delhi|110009
+Kamla Nagar, Delhi|110007
+Kashmere Gate, Delhi|110006
+Seelampur, Delhi|110053
+Vivek Vihar, Delhi|110095
+Ashok Vihar, Delhi|110052
+Malviya Nagar, Delhi|110017
+Hauz Khas, Delhi|110016
+Green Park, Delhi|110016
+South Extension, Delhi|110049
+Defence Colony, Delhi|110024
+Lajpat Nagar, Delhi|110024
+Greater Kailash, Delhi|110048
+Okhla, Delhi|110020
 Bangalore|560001
 Whitefield, Bangalore|560066
 Electronic City, Bangalore|560100
 Koramangala, Bangalore|560034
+Indiranagar, Bangalore|560038
+HSR Layout, Bangalore|560102
+BTM Layout, Bangalore|560076
+Jayanagar, Bangalore|560041
+JP Nagar, Bangalore|560078
+Marathahalli, Bangalore|560037
+Bellandur, Bangalore|560103
+Sarjapur Road, Bangalore|560035
+Bommanahalli, Bangalore|560068
+Bannerghatta Road, Bangalore|560076
+Yelahanka, Bangalore|560064
+Hebbal, Bangalore|560024
+RT Nagar, Bangalore|560032
+Rajajinagar, Bangalore|560010
+Malleshwaram, Bangalore|560003
+Yeshwanthpur, Bangalore|560022
+Vijayanagar, Bangalore|560040
+Basaveshwaranagar, Bangalore|560079
+Kamakshipalya, Bangalore|560079
+Nagarbhavi, Bangalore|560072
+Kengeri, Bangalore|560060
+Rajarajeshwari Nagar, Bangalore|560098
+Uttarahalli, Bangalore|560061
+Banashankari, Bangalore|560070
+Padmanabhanagar, Bangalore|560070
+Kumaraswamy Layout, Bangalore|560078
+Girinagar, Bangalore|560085
+Katriguppe, Bangalore|560085
 Hyderabad|500001
 Hitech City, Hyderabad|500081
 Secunderabad, Hyderabad|500003
 Madhapur, Hyderabad|500081
+Gachibowli, Hyderabad|500032
+Kondapur, Hyderabad|500084
+Banjara Hills, Hyderabad|500034
+Jubilee Hills, Hyderabad|500033
+Begumpet, Hyderabad|500016
+Somajiguda, Hyderabad|500082
+Ameerpet, Hyderabad|500016
+Kukatpally, Hyderabad|500072
+Miyapur, Hyderabad|500049
+Uppal, Hyderabad|500039
+LB Nagar, Hyderabad|500074
+Dilsukhnagar, Hyderabad|500060
+Malakpet, Hyderabad|500036
+Charminar, Hyderabad|500002
+Abids, Hyderabad|500001
+Nampally, Hyderabad|500001
+Mehdipatnam, Hyderabad|500028
+Tolichowki, Hyderabad|500008
+Attapur, Hyderabad|500048
+Rajendranagar, Hyderabad|500030
+Shamshabad, Hyderabad|501218
+Kompally, Hyderabad|500014
+Alwal, Hyderabad|500010
+Trimulgherry, Hyderabad|500015
+AS Rao Nagar, Hyderabad|500062
+ECIL, Hyderabad|500062
+Nacharam, Hyderabad|500076
 Chennai|600001
 T Nagar, Chennai|600017
 Anna Nagar, Chennai|600040
 Adyar, Chennai|600020
+Velachery, Chennai|600042
+Tambaram, Chennai|600045
+Chrompet, Chennai|600044
+Porur, Chennai|600116
+Guindy, Chennai|600032
+Saidapet, Chennai|600015
+Mylapore, Chennai|600004
+Triplicane, Chennai|600005
+Egmore, Chennai|600008
+Kilpauk, Chennai|600010
+Nungambakkam, Chennai|600034
+Kodambakkam, Chennai|600024
+Vadapalani, Chennai|600026
+Ashok Nagar, Chennai|600083
+KK Nagar, Chennai|600078
+Valasaravakkam, Chennai|600087
+Virugambakkam, Chennai|600092
 Kolkata|700001
 Salt Lake, Kolkata|700064
 Howrah, Kolkata|711101
+New Town, Kolkata|700156
+Rajarhat, Kolkata|700135
+Park Street, Kolkata|700016
+Ballygunge, Kolkata|700019
+Alipore, Kolkata|700027
+Behala, Kolkata|700034
+Jadavpur, Kolkata|700032
+Tollygunge, Kolkata|700033
+Kasba, Kolkata|700042
+Gariahat, Kolkata|700019
+Rashbehari, Kolkata|700029
+Garia, Kolkata|700084
+Sonarpur, Kolkata|700150
+Baruipur, Kolkata|700144
+Barasat, Kolkata|700124
+Dum Dum, Kolkata|700074
+Belgharia, Kolkata|700056
+Madhyamgram, Kolkata|700129
+Barrackpore, Kolkata|700120
+Naihati, Kolkata|743165
+Bhatpara, Kolkata|743123
+Serampore, Kolkata|712201
 Pune|411001
 Hinjewadi, Pune|411057
 Kothrud, Pune|411038
+Wakad, Pune|411057
+Aundh, Pune|411007
+Baner, Pune|411045
+Pimple Saudagar, Pune|411027
+Pimpri, Pune|411018
+Chinchwad, Pune|411033
+Viman Nagar, Pune|411014
+Kharadi, Pune|411014
+Hadapsar, Pune|411028
+Magarpatta, Pune|411013
+Camp, Pune|411001
+Koregaon Park, Pune|411001
+Shivajinagar, Pune|411005
+Deccan, Pune|411004
+Karve Nagar, Pune|411052
+Warje, Pune|411058
+Katraj, Pune|411046
 Ahmedabad|380001
 Satellite, Ahmedabad|380015
+Maninagar, Ahmedabad|380008
+Naranpura, Ahmedabad|380013
+Vastrapur, Ahmedabad|380015
+Bopal, Ahmedabad|380058
+Gota, Ahmedabad|382481
+Chandkheda, Ahmedabad|382424
+Sabarmati, Ahmedabad|380005
+Paldi, Ahmedabad|380007
+Navrangpura, Ahmedabad|380009
+C G Road, Ahmedabad|380009
+Bodakdev, Ahmedabad|380054
+Thaltej, Ahmedabad|380054
+Science City, Ahmedabad|380060
 Jaipur|302001
+Malviya Nagar, Jaipur|302017
+Vaishali Nagar, Jaipur|302021
+Mansarovar, Jaipur|302020
+Jagatpura, Jaipur|302017
+Pratap Nagar, Jaipur|302033
+Ajmer Road, Jaipur|302006
+Raja Park, Jaipur|302004
+C Scheme, Jaipur|302001
+MI Road, Jaipur|302001
+Jhotwara, Jaipur|302012
+Sanganer, Jaipur|303902
 Lucknow|226001
+Gomti Nagar, Lucknow|226010
+Hazratganj, Lucknow|226001
+Indira Nagar, Lucknow|226016
+Aliganj, Lucknow|226024
+Alambagh, Lucknow|226005
+Charbagh, Lucknow|226004
+Aminabad, Lucknow|226018
 Kanpur|208001
+Kidwai Nagar, Kanpur|208011
+Civil Lines, Kanpur|208001
+Swaroop Nagar, Kanpur|208002
+Kalyanpur, Kanpur|208017
+Panki, Kanpur|208020
 Nagpur|440001
+Dharampeth, Nagpur|440010
+Sadar, Nagpur|440001
+Sitabuldi, Nagpur|440012
+Wardha Road, Nagpur|440015
 Indore|452001
+Vijay Nagar, Indore|452010
+MG Road, Indore|452001
+Palasia, Indore|452001
 Bhopal|462001
+MP Nagar, Bhopal|462011
+Arera Colony, Bhopal|462016
+New Market, Bhopal|462001
 Visakhapatnam|530001
+Dwaraka Nagar, Visakhapatnam|530016
+MVP Colony, Visakhapatnam|530017
+Gajuwaka, Visakhapatnam|530026
 Patna|800001
+Boring Road, Patna|800001
+Kankarbagh, Patna|800020
+Rajendra Nagar, Patna|800016
 Vadodara|390001
+Alkapuri, Vadodara|390007
+Sayajigunj, Vadodara|390005
+Manjalpur, Vadodara|390011
 Surat|395001
+Adajan, Surat|395009
+Vesu, Surat|395007
+Athwa, Surat|395001
 Ludhiana|141001
+Model Town, Ludhiana|141002
+Civil Lines, Ludhiana|141001
+Sarabha Nagar, Ludhiana|141001
 Agra|282001
+Sanjay Place, Agra|282002
+Kamla Nagar, Agra|282005
+Shahganj, Agra|282010
 Nashik|422001
+College Road, Nashik|422005
+Satpur, Nashik|422007
+Gangapur Road, Nashik|422013
 Varanasi|221001
+Lanka, Varanasi|221005
+Sigra, Varanasi|221010
+Cantonment, Varanasi|221002
 Kochi|682001
+Ernakulam, Kochi|682011
+Kakkanad, Kochi|682030
+Edapally, Kochi|682024
 Coimbatore|641001
+RS Puram, Coimbatore|641002
+Gandhipuram, Coimbatore|641012
+Peelamedu, Coimbatore|641004
 Chandigarh|160001
+Sector 17, Chandigarh|160017
+Sector 22, Chandigarah|160022
+Sector 35, Chandigarh|160035
 Mysore|570001
+Kuvempunagar, Mysore|570023
+Vijayanagar, Mysore|570017
+Gokulam, Mysore|570002
+Madurai|625001
+Anna Nagar, Madurai|625020
+KK Nagar, Madurai|625014
+SS Colony, Madurai|625016
+Tiruchirappalli|620001
+Thillai Nagar, Tiruchirappalli|620018
+KK Nagar, Tiruchirappalli|620021
+Srirangam, Tiruchirappalli|620006
+Salem|636001
+Fairlands, Salem|636016
+Hasthampatti, Salem|636007
+Five Roads, Salem|636007
+Thiruvananthapuram|695001
+Pattom, Thiruvananthapuram|695004
+Vattiyoorkavu, Thiruvananthapuram|695013
+Kazhakootam, Thiruvananthapuram|695582
+Kozhikode|673001
+Mavoor Road, Kozhikode|673004
+West Hill, Kozhikode|673005
+Medical College, Kozhikode|673008
+Kottayam|686001
+Baker Junction, Kottayam|686001
+Nagampadam, Kottayam|686020
+MC Road, Kottayam|686001
+Thrissur|680001
+East Fort, Thrissur|680005
+West Fort, Thrissur|680004
+Swaraj Round, Thrissur|680020
+Kollam|691001
+Chinnakada, Kollam|691001
+Sakthikulangara, Kollam|691581
+Asramam, Kollam|691002
+Alappuzha|688001
+Mullackal, Alappuzha|688011
+Iron Bridge, Alappuzha|688013
+Thathampally, Alappuzha|688013
+Jalandhar|144001
+Model Town, Jalandhar|144003
+Civil Lines, Jalandhar|144001
+Guru Nanak Mission, Jalandhar|144008
+Amritsar|143001
+Ranjit Avenue, Amritsar|143001
+Lawrence Road, Amritsar|143001
+Chheharta, Amritsar|143105
+Patiala|147001
+Model Town, Patiala|147002
+Leela Bhawan, Patiala|147001
+Chotti Baradari, Patiala|147001
+Bathinda|151001
+Dhobi Bazar, Bathinda|151001
+Civil Lines, Bathinda|151005
+Mohali|160055
+Phase 8, Mohali|160055
+Phase 7, Mohali|160062
+Manimajra, Mohali|160101
+Guwahati|781001
+Paltan Bazar, Guwahati|781008
+Fancy Bazar, Guwahati|781001
+Dispur, Guwahati|781006
+Silpukhuri, Guwahati|781003
+Bhubaneswar|751001
+Kharvel Nagar, Bhubaneswar|751001
+Saheed Nagar, Bhubaneswar|751007
+Patia, Bhubaneswar|751024
+Cuttack|753001
+Bidanasi, Cuttack|753014
+Link Road, Cuttack|753012
+Badambadi, Cuttack|753012
+Rourkela|769001
+Fertilizer Township, Rourkela|769007
+Civil Township, Rourkela|769004
+Sector 19, Rourkela|769005
+Ranchi|834001
+Lalpur, Ranchi|834001
+Doranda, Ranchi|834002
+Morabadi, Ranchi|834008
+Jamshedpur|831001
+Bistupur, Jamshedpur|831001
+Sakchi, Jamshedpur|831001
+Kadma, Jamshedpur|831005
+Dhanbad|826001
+Hirapur, Dhanbad|828109
+Bank More, Dhanbad|826001
+Saraidhela, Dhanbad|828127
+Bokaro|827001
+Sector 4, Bokaro|827004
+City Centre, Bokaro|827004
+Chas, Bokaro|827013
+Raipur|492001
+Civil Lines, Raipur|492001
+Shankar Nagar, Raipur|492007
+Devendra Nagar, Raipur|492004
+Bilaspur|495001
+Link Road, Bilaspur|495001
+Vyapar Vihar, Bilaspur|495001
+Nehru Nagar, Bilaspur|495001
+Gwalior|474001
+Lashkar, Gwalior|474009
+Morar, Gwalior|474006
+City Centre, Gwalior|474011
+Jabalpur|482001
+Wright Town, Jabalpur|482002
+Napier Town, Jabalpur|482001
+Civil Lines, Jabalpur|482001
+Ujjain|456001
+Freeganj, Ujjain|456010
+Nanakheda, Ujjain|456010
+Dewas Gate, Ujjain|456001
+Guwahati|781001
+Ganeshguri, Guwahati|781006
+Hatigaon, Guwahati|781038
+Beltola, Guwahati|781028
+Imphal|795001
+Paona Bazar, Imphal|795001
+Thangmeiband, Imphal|795004
+Singjamei, Imphal|795002
+Shillong|793001
+Police Bazar, Shillong|793001
+Laitumkhrah, Shillong|793003
+Nongthymmai, Shillong|793014
+Agartala|799001
+Palace Compound, Agartala|799001
+Krishna Nagar, Agartala|799007
+GB, Agartala|799003
+Aizawl|796001
+Dawrpui, Aizawl|796001
+Bawngkawn, Aizawl|796014
+Ramhlun, Aizawl|796012
+Dehradun|248001
+Rajpur Road, Dehradun|248009
+Clock Tower, Dehradun|248001
+Race Course, Dehradun|248001
+Haridwar|249401
+Jwalapur, Haridwar|249407
+Ranipur, Haridwar|249410
+Bhel, Haridwar|249403
+Roorkee|247667
+Civil Lines, Roorkee|247667
+Solani Nagar, Roorkee|247667
+Ganesh Nagar, Roorkee|247667
+Nainital|263001
+Tallital, Nainital|263002
+Mallital, Nainital|263001
+Haldwani|263139
+Rudrapur|263153
+Shimla|171001
+Mall Road, Shimla|171003
+Sanjauli, Shimla|171006
+Lakkar Bazar, Shimla|171001
+Dharamshala|176215
+McLeod Ganj, Dharamshala|176219
+Lower Dharamshala, Dharamshala|176216
+Kangra|176001
+Kullu|175101
+Manali|175131
+Srinagar|190001
+Lal Chowk, Srinagar|190011
+Dal Gate, Srinagar|190001
+Rajbagh, Srinagar|190008
+Jammu|180001
+Gandhi Nagar, Jammu|180004
+Talab Tillo, Jammu|180002
+Bahu Plaza, Jammu|180006
+Udhampur|182101
+Kathua|184101
+Rajouri|185131
+Poonch|185101
+Gangtok|737101
+MG Marg, Gangtok|737101
+Tadong, Gangtok|737102
+Development Area, Gangtok|737102
+Siliguri|734001
+Sevoke Road, Siliguri|734001
+Matigara, Siliguri|734010
+Pradhan Nagar, Siliguri|734003
+Darjeeling|734101
+Chowrasta, Darjeeling|734101
+Mall Road, Darjeeling|734101
+Jalpaiguri|735101
+Cooch Behar|736101
+Malda|732101

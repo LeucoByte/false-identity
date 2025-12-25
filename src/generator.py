@@ -2693,7 +2693,8 @@ class IdentityGenerator:
             "china": "Chinese",
             "japan": "Japanese",
             "greece": "Greek",
-            "vietnam": "Vietnamese"
+            "vietnam": "Vietnamese",
+            "india": "Hindi"
         }
         native_lang = country_languages.get(country.lower(), "Native")
         languages.append({
