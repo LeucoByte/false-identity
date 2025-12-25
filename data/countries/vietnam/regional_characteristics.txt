@@ -11,23 +11,14 @@ Lived through the end of the Vietnam War (1975)|57|999|both|1.0
 Grew up during post-war reunification period|55|999|both|0.95
 Experienced the Subsidy Period (bao cấp) economic hardship|52|999|both|0.9
 Witnessed the Đổi Mới (Renovation) reforms beginning in 1986|53|999|both|0.85
-Remembers the collapse of the Soviet Union's impact on Vietnam|41|999|both|0.7
 Lived through the 1990s economic opening and growth|42|999|both|0.8
 Experienced re-establishment of US-Vietnam relations (1995)|37|999|both|0.75
-Witnessed Vietnam joining ASEAN (1995)|37|999|both|0.6
 Grew up without internet or mobile phones|38|999|both|0.85
-Remembers the Asian Financial Crisis (1997-1998)|34|999|both|0.65
 Experienced Vietnam joining WTO (2007)|25|999|both|0.7
 Witnessed the rapid industrialization of Vietnam|30|999|both|0.8
-Grew up during the doi moi economic reforms|45|65|both|0.9
-Remembers when motorbikes became common in cities|35|999|both|0.75
-Experienced the transition from planned to market economy|40|999|both|0.85
-Lived through multiple currency reforms|50|999|both|0.7
 Witnessed the rise of the middle class|28|999|both|0.6
 Remembers when foreign brands entered Vietnam|32|999|both|0.7
 Experienced the rapid urbanization of Hồ Chí Minh City and Hà Nội|30|999|both|0.65
-Grew up listening to revolutionary songs|48|999|both|0.8
-Witnessed the development of Vietnam's technology sector|25|999|both|0.5
 Remembers when internet cafes were popular|27|45|both|0.7
 Experienced the SARS outbreak (2003)|29|999|both|0.4
 Lived through the H5N1 bird flu outbreaks|26|999|both|0.5
@@ -35,5 +26,4 @@ Witnessed Vietnam hosting SEA Games multiple times|22|999|both|0.6
 Remembers when Vietnamese football won AFF Championship|24|999|both|0.65
 Experienced the COVID-19 pandemic and strict lockdowns|18|999|both|0.95
 Grew up with social media and smartphones|18|30|both|0.9
-Witnessed the rise of Vietnamese startups and tech companies|20|40|both|0.5
 Remembers when China-Vietnam relations were tense over territorial disputes|20|999|both|0.4
