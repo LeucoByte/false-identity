@@ -281,14 +281,42 @@ def translate(text: str, country: str) -> str:
         # GREECE - Greek alphabet (Ελληνικά)
         elif country == 'greece':
             if TRANSLITERATE_AVAILABLE:
-                # Use transliterate library for Greek
+                # Use transliterate library for Greek with corrections
                 try:
-                    return translit(text, 'el', reversed=True)
+                    import re
+                    result = translit(text, 'el', reversed=True)
+
+                    # Fix common transliteration issues
+                    # ου → ou (not oy)
+                    result = result.replace('oy', 'ou')
+                    # αυ → av (not ay)
+                    result = result.replace('ay', 'av')
+                    # ευ → ev (not ey)
+                    result = result.replace('ey', 'ev')
+
+                    # Fix μπ → mb (after vowels, e.g., Τούμπα → Toumba not Touba)
+                    result = re.sub(r'([aeiou])ba', r'\1mba', result, flags=re.IGNORECASE)
+
+                    # Fix υπ → yp (e.g., Αστυπάλαια → Astypalaia not Astupalaia)
+                    result = result.replace('up', 'yp')
+
+                    # Fix final y → u (e.g., Vasileioy → Vasileiou)
+                    result = re.sub(r'y\b', 'u', result)
+
+                    # Capitalize first letter
+                    if result:
+                        result = result[0].upper() + result[1:]
+
+                    return result
                 except:
                     pass
             # Fallback to unidecode
             if UNIDECODE_AVAILABLE:
-                return unidecode(text)
+                result = unidecode(text)
+                # Capitalize first letter
+                if result:
+                    result = result[0].upper() + result[1:]
+                return result
             return text
 
         # INDIA - Multiple scripts (but names usually pre-romanized)

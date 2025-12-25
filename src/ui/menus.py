@@ -281,8 +281,14 @@ def view_saved_identities():
 
     for i, filepath in enumerate(files):
         identity = load_identity(str(filepath))
-        # Use romanized name for display if the country uses non-Latin script
-        full_name = translate(identity.full_name, identity.country)
+        # Show original name with romanization in parentheses for non-Latin scripts
+        non_latin_countries = ['russia', 'thailand', 'china', 'japan', 'greece']
+        if identity.country.lower() in non_latin_countries:
+            original_name = identity.full_name
+            romanized = translate(identity.full_name, identity.country)
+            full_name = f"{original_name} ({romanized})"
+        else:
+            full_name = identity.full_name
         country = identity.country.upper()
         website = identity.website
 
@@ -464,8 +470,14 @@ def view_saved_identities():
         print(f"{BOLD}{YELLOW}Name:{RESET:<46} {BOLD}{CYAN}Nationality:{RESET:<21} {BOLD}{MAGENTA}Site:{RESET}")
         for i, filepath in enumerate(files):
             identity = load_identity(str(filepath))
-            # Use romanized name for display if the country uses non-Latin script
-            full_name = translate(identity.full_name, identity.country)
+            # Show original name with romanization in parentheses for non-Latin scripts
+            non_latin_countries = ['russia', 'thailand', 'china', 'japan', 'greece']
+            if identity.country.lower() in non_latin_countries:
+                original_name = identity.full_name
+                romanized = translate(identity.full_name, identity.country)
+                full_name = f"{original_name} ({romanized})"
+            else:
+                full_name = identity.full_name
             country = identity.country.upper()
             website = identity.website
 
