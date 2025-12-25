@@ -517,14 +517,14 @@ class IdentityGenerator:
                 given_name = parts[1]
 
                 if gender.lower() == 'female':
-                    # Thị (traditional female marker) - decreasing usage in younger generations
-                    # Older women: very common | Young urban women: less common
-                    thi_probability = 0.90 if age >= 55 else 0.65 if age >= 35 else 0.35
+                    # Thị (traditional female marker) - rare in younger generations
+                    # Older women: very common | Young urban women: increasingly rare
+                    thi_probability = 0.90 if age >= 55 else 0.60 if age >= 35 else 0.15
                     if random.random() < thi_probability:
                         parts = [surname, 'Thị', given_name]
                 else:
-                    # Văn (common male marker) - age-dependent usage
-                    van_probability = 0.85 if age >= 50 else 0.70 if age >= 30 else 0.45
+                    # Văn (common male marker) - decreasing in younger generations
+                    van_probability = 0.85 if age >= 50 else 0.65 if age >= 30 else 0.35
                     if random.random() < van_probability:
                         parts = [surname, 'Văn', given_name]
 
@@ -961,13 +961,13 @@ class IdentityGenerator:
             # NOTE: Prefixing here, display_name_with_transliteration() handles correct ordering
             if country.lower() == 'vietnam':
                 if opposite_gender == 'female':
-                    # Thị (traditional female marker) - age-dependent probability
-                    thi_probability = 0.90 if partner_age >= 55 else 0.65 if partner_age >= 35 else 0.35
+                    # Thị (traditional female marker) - rare in younger generations
+                    thi_probability = 0.90 if partner_age >= 55 else 0.60 if partner_age >= 35 else 0.15
                     if random.random() < thi_probability:
                         partner_name = f"Thị {partner_name}"
                 else:
-                    # Văn (common male marker) - higher probability for older generations
-                    van_probability = 0.85 if partner_age >= 50 else 0.70 if partner_age >= 30 else 0.45
+                    # Văn (common male marker) - decreasing in younger generations
+                    van_probability = 0.85 if partner_age >= 50 else 0.65 if partner_age >= 30 else 0.35
                     if random.random() < van_probability:
                         partner_name = f"Văn {partner_name}"
 
@@ -1840,6 +1840,10 @@ class IdentityGenerator:
             used_child_names = set()  # NEVER allow duplicate child names
             used_child_pinyin = set()  # For China: also prevent same pinyin
 
+            # Vietnam: Track gender markers to avoid uniform patterns (anti-AI detection)
+            van_count_male_children = 0  # Count sons with Văn marker
+            thi_count_female_children = 0  # Count daughters with Thị marker
+
             # Generate children for each marriage
             for marriage_num in range(1, total_marriages + 1):
                 num_children_this_marriage = children_per_marriage.get(marriage_num, 0)
@@ -1866,18 +1870,28 @@ class IdentityGenerator:
                         # Vietnam: Prefix gender marker to given name (display will reorder correctly)
                         # Vietnamese structure: Surname + Gender_Marker + Given_Name
                         # NOTE: Prefixing here, display_name_with_transliteration() handles correct ordering
-                        # Child age calculated later, so using conservative estimate (typically < 35)
+                        # IMPORTANT: Track markers to avoid uniform patterns (too many Văn/Thị = AI detection)
+                        # Children are typically young (<15), so markers are RARE in modern Vietnam
+                        vietnam_child_marker_added = False
                         if country.lower() == 'vietnam':
                             if child_gender == 'female':
-                                # Thị less common in younger generations - conservative probability
-                                thi_probability = 0.40
+                                # Thị rare in young generation - low base probability
+                                thi_probability = 0.25
+                                # If ≥2 daughters already have Thị, reduce probability to break pattern
+                                if thi_count_female_children >= 2:
+                                    thi_probability = 0.10
                                 if random.random() < thi_probability:
                                     child_name = f"Thị {child_name}"
+                                    vietnam_child_marker_added = True
                             else:
-                                # Văn less common in younger generations - conservative probability
-                                van_probability = 0.45
+                                # Văn rare in young generation - low base probability
+                                van_probability = 0.25
+                                # If ≥2 sons already have Văn, reduce probability to break pattern
+                                if van_count_male_children >= 2:
+                                    van_probability = 0.10
                                 if random.random() < van_probability:
                                     child_name = f"Văn {child_name}"
+                                    vietnam_child_marker_added = True
 
                         # Check exact name match
                         if child_name in used_child_names:
@@ -2127,6 +2141,13 @@ class IdentityGenerator:
                             "from_marriage": marriage_num,
                             "is_twin": is_twin
                         })
+
+                    # Vietnam: Track markers to detect and prevent uniform patterns
+                    if country.lower() == 'vietnam' and vietnam_child_marker_added:
+                        if child_gender == 'female':
+                            thi_count_female_children += 1
+                        else:
+                            van_count_male_children += 1
         # If will_have_children is False, children remains as empty list []
 
         # Generate siblings based on country's sibling probability
@@ -2183,6 +2204,10 @@ class IdentityGenerator:
             used_sibling_names = set()  # NEVER allow duplicate names
             used_sibling_pinyin = set()  # For China: also prevent same pinyin
 
+            # Vietnam: Track gender markers to avoid uniform patterns (anti-AI detection)
+            van_count_male_siblings = 0  # Count males with Văn marker
+            thi_count_female_siblings = 0  # Count females with Thị marker
+
             for _ in range(num_siblings):
                 # Siblings are similar age - use same age bucket as identity
                 sibling_gender = random.choice(['male', 'female'])
@@ -2195,17 +2220,27 @@ class IdentityGenerator:
                     # Vietnam: Prefix gender marker to given name (display will reorder correctly)
                     # Vietnamese structure: Surname + Gender_Marker + Given_Name
                     # NOTE: Prefixing here, display_name_with_transliteration() handles correct ordering
+                    # IMPORTANT: Track markers to avoid uniform patterns (too many Văn/Thị = AI detection)
+                    vietnam_marker_added = False
                     if country.lower() == 'vietnam':
                         if sibling_gender == 'female':
                             # Thị probability based on age (siblings have similar age to main identity)
-                            thi_probability = 0.90 if age >= 55 else 0.65 if age >= 35 else 0.35
+                            thi_probability = 0.90 if age >= 55 else 0.60 if age >= 35 else 0.15
+                            # If ≥2 sisters already have Thị, reduce probability to break pattern
+                            if thi_count_female_siblings >= 2:
+                                thi_probability = 0.20
                             if random.random() < thi_probability:
                                 sibling_name = f"Thị {sibling_name}"
+                                vietnam_marker_added = True
                         else:
                             # Văn probability depends on age
-                            van_probability = 0.85 if age >= 50 else 0.70 if age >= 30 else 0.45
+                            van_probability = 0.85 if age >= 50 else 0.65 if age >= 30 else 0.35
+                            # If ≥2 brothers already have Văn, reduce probability to break pattern
+                            if van_count_male_siblings >= 2:
+                                van_probability = 0.20
                             if random.random() < van_probability:
                                 sibling_name = f"Văn {sibling_name}"
+                                vietnam_marker_added = True
 
                     # Check exact name match (all countries)
                     if sibling_name in used_sibling_names:
@@ -2412,6 +2447,13 @@ class IdentityGenerator:
                         "current_age": current_age,
                         "is_twin": is_twin
                     })
+
+                # Vietnam: Track markers to detect and prevent uniform patterns
+                if country.lower() == 'vietnam' and vietnam_marker_added:
+                    if sibling_gender == 'female':
+                        thi_count_female_siblings += 1
+                    else:
+                        van_count_male_siblings += 1
 
         # ADDITIONAL CASE: Mother could have died giving birth to ANY sibling
         # Check if mother died and if death date matches any sibling's birth year
