@@ -1,0 +1,53 @@
+Medicine
+Law
+Engineering
+Business Administration
+Economics
+Biology
+Chemistry
+Physics
+Mathematics
+Computer Science
+Cybersecurity
+Psychology
+Sociology
+History
+Philosophy
+Political Science
+International Relations
+Architecture
+Civil Engineering
+Mechanical Engineering
+Electrical Engineering
+Languages
+Literature
+Greek Philology
+Ancient Greek Studies
+Byzantine Studies
+Fine Arts
+Music
+Theater
+Education
+Nursing
+Pharmacy
+Dentistry
+Veterinary Medicine
+Environmental Science
+Marine Science
+Marketing
+Accounting
+Tourism Management
+Hospitality Management
+Sports Science
+Nutrition
+Social Work
+Communication
+Journalism
+Advertising
+Film Studies
+Data Science
+Artificial Intelligence
+Biotechnology
+Agricultural Science
+Archaeology
+Anthropology

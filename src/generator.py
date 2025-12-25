@@ -1231,23 +1231,51 @@ class IdentityGenerator:
                 max_past_rels = max(1, min(3, (age - 18) // 5))
                 num_past_relationships = random.randint(1, max_past_rels)
 
+                # Helper function to check for date range overlaps
+                def dates_overlap(start1_year, end1_year, start2_year, end2_year):
+                    """Check if two date ranges overlap."""
+                    return not (end1_year < start2_year or end2_year < start1_year)
+
+                used_date_ranges = []  # Track all used date ranges to prevent overlaps
+
                 for i in range(num_past_relationships):
                     past_partner_info = generate_partner_info()
                     birth_date, current_age = self._generate_birth_date(past_partner_info["age"], current_year, date_format)
 
-                    # Generate relationship duration and dates
-                    max_rel_duration = max(1, min(5, age - 20))
-                    relationship_duration = random.randint(1, max_rel_duration)
-                    max_years_ago = max(1, min(10, age - 20))
-                    years_ago_ended = random.randint(1, max_years_ago)
+                    # Generate relationship duration and dates with overlap prevention
+                    max_attempts = 10  # Try up to 10 times to find non-overlapping dates
+                    found_valid_dates = False
 
-                    end_year = current_year - years_ago_ended
-                    end_month = random.randint(1, 12)
-                    end_day = random.randint(1, 28)
+                    for attempt in range(max_attempts):
+                        max_rel_duration = max(1, min(5, age - 20))
+                        relationship_duration = random.randint(1, max_rel_duration)
+                        max_years_ago = max(1, min(10, age - 20))
+                        years_ago_ended = random.randint(1, max_years_ago)
 
-                    start_year = end_year - relationship_duration
-                    start_month = random.randint(1, 12)
-                    start_day = random.randint(1, 28)
+                        end_year = current_year - years_ago_ended
+                        end_month = random.randint(1, 12)
+                        end_day = random.randint(1, 28)
+
+                        start_year = end_year - relationship_duration
+                        start_month = random.randint(1, 12)
+                        start_day = random.randint(1, 28)
+
+                        # Check for overlaps with existing relationships
+                        has_overlap = False
+                        for existing_start_year, existing_end_year in used_date_ranges:
+                            if dates_overlap(start_year, end_year, existing_start_year, existing_end_year):
+                                has_overlap = True
+                                break
+
+                        if not has_overlap:
+                            # Found valid non-overlapping dates
+                            found_valid_dates = True
+                            used_date_ranges.append((start_year, end_year))
+                            break
+
+                    # Skip this relationship if we couldn't find non-overlapping dates
+                    if not found_valid_dates:
+                        continue
 
                     if date_format == "DD/MM/YYYY":
                         start_date = f"{start_day:02d}/{start_month:02d}/{start_year}"
@@ -2016,6 +2044,7 @@ class IdentityGenerator:
                             "surnames": child_surnames,
                             "deceased": True,
                             "from_marriage": marriage_num,
+                            "is_twin": is_twin,
                             **death_info
                         })
                     else:
@@ -2027,7 +2056,8 @@ class IdentityGenerator:
                             "deceased": False,
                             "birth_date": birth_date,
                             "current_age": child_age,  # Use child_age directly
-                            "from_marriage": marriage_num
+                            "from_marriage": marriage_num,
+                            "is_twin": is_twin
                         })
         # If will_have_children is False, children remains as empty list []
 
@@ -2219,11 +2249,13 @@ class IdentityGenerator:
                     if allow_twins and candidate_age in used_sibling_ages and used_sibling_ages[candidate_age] < 3:
                         used_sibling_ages[candidate_age] += 1
                         sibling_age = candidate_age
+                        is_twin = True
                         break
                     # Otherwise check if this age is available (not used yet)
                     elif candidate_age != age and candidate_age not in used_sibling_ages:
                         used_sibling_ages[candidate_age] = 1
                         sibling_age = candidate_age
+                        is_twin = False
                         break
 
                 # If no valid age found after all attempts, skip this sibling
@@ -2282,6 +2314,7 @@ class IdentityGenerator:
                         "gender": sibling_gender,
                         "surnames": sibling_surnames,
                         "deceased": True,
+                        "is_twin": is_twin,
                         **death_info
                     })
                 else:
@@ -2293,7 +2326,8 @@ class IdentityGenerator:
                         "surnames": sibling_surnames,
                         "deceased": False,
                         "birth_date": birth_date,
-                        "current_age": current_age
+                        "current_age": current_age,
+                        "is_twin": is_twin
                     })
 
         # ADDITIONAL CASE: Mother could have died giving birth to ANY sibling
@@ -2532,7 +2566,8 @@ class IdentityGenerator:
             "russia": "Russian",
             "thailand": "Thai",
             "china": "Chinese",
-            "japan": "Japanese"
+            "japan": "Japanese",
+            "greece": "Greek"
         }
         native_lang = country_languages.get(country.lower(), "Native")
         languages.append({

@@ -22,6 +22,7 @@ from storage import (
 )
 from ui.display import clear_screen, print_world_ascii
 from panic import panic_mode, panic_recovery
+from models import translate
 
 
 def pad_unicode_string(text: str, width: int) -> str:
@@ -280,7 +281,8 @@ def view_saved_identities():
 
     for i, filepath in enumerate(files):
         identity = load_identity(str(filepath))
-        full_name = identity.full_name
+        # Use romanized name for display if the country uses non-Latin script
+        full_name = translate(identity.full_name, identity.country)
         country = identity.country.upper()
         website = identity.website
 
@@ -448,17 +450,29 @@ def view_saved_identities():
 
         clear_screen()
 
-        # Redisplay menu
+        # Redisplay menu - reload files list in case of deletions
+        files = list_saved_identities()
+        if not files:
+            clear_screen()
+            return
+
+        num_width = len(str(len(files)))
+
         print(f"{BOLD}{YELLOW}Saved identities: {len(files)}{RESET}")
         print()
 
         print(f"{BOLD}{YELLOW}Name:{RESET:<46} {BOLD}{CYAN}Nationality:{RESET:<21} {BOLD}{MAGENTA}Site:{RESET}")
         for i, filepath in enumerate(files):
             identity = load_identity(str(filepath))
-            full_name = identity.full_name
+            # Use romanized name for display if the country uses non-Latin script
+            full_name = translate(identity.full_name, identity.country)
             country = identity.country.upper()
             website = identity.website
-            print(f"    [{RED}{i:0{num_width}d}{RESET}] {full_name:<44}{country:<30}{website}")
+
+            # Use Unicode-aware padding for proper alignment
+            padded_name = pad_unicode_string(full_name, 44)
+            padded_country = pad_unicode_string(country, 30)
+            print(f"    [{RED}{i:0{num_width}d}{RESET}] {padded_name}{padded_country}{website}")
 
         print()
         print(f"{BOLD}{YELLOW}Options:{RESET}")

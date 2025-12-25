@@ -31,15 +31,10 @@ except ImportError:
     PYPINYIN_AVAILABLE = False
 
 try:
-    import cutlet
-    CUTLET_AVAILABLE = True
-    # Initialize Japanese romanizer
-    try:
-        katsu = cutlet.Cutlet()
-    except:
-        CUTLET_AVAILABLE = False
+    from pykakasi import kakasi
+    PYKAKASI_AVAILABLE = True
 except ImportError:
-    CUTLET_AVAILABLE = False
+    PYKAKASI_AVAILABLE = False
 
 try:
     from transliterate import translit
@@ -253,15 +248,18 @@ def translate(text: str, country: str) -> str:
 
         # JAPAN - Japanese (Kanji/Hiragana/Katakana)
         elif country == 'japan':
-            if CUTLET_AVAILABLE:
-                # Use cutlet for Romaji transliteration
+            if PYKAKASI_AVAILABLE:
+                # Use pykakasi for proper Hepburn romanization
                 try:
-                    return katsu.romaji(text)
+                    kks = kakasi()
+                    result = kks.convert(text)
+                    romaji = ''.join([item['hepburn'] for item in result])
+                    # Capitalize properly (first letter of each word)
+                    return ' '.join(word.capitalize() for word in romaji.split())
                 except:
-                    pass
-            # Fallback to unidecode
-            if UNIDECODE_AVAILABLE:
-                return unidecode(text)
+                    # If pykakasi fails, return original
+                    return text
+            # Fallback: return original text
             return text
 
         # RUSSIA - Cyrillic (Кириллица)

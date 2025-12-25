@@ -1,0 +1,28 @@
+# Regional and Historical Characteristics for Greece
+# Format: characteristic_text|min_age|max_age|gender|probability
+# gender: male, female, both
+# probability: 0.0-1.0 (chance of applying)
+# CRITICAL: Current year is 2025. Min_age = age when CONSCIOUSLY experienced (not just alive)
+# For "grew up" events: need 10+ years of conscious experience
+# For "witnessed/experienced" events: need to be 14+ (teenager awareness)
+# For "remembers" events: need to be 7+ (childhood memories)
+
+Completed mandatory military service|27|75|male|0.98
+Grew up during the Greek military junta (1967-1974)|65|999|both|1.0
+Witnessed the restoration of democracy (Metapolitefsi)|58|999|both|0.9
+Remembers Greece joining the EU (1981)|56|999|both|0.85
+Witnessed Greece joining the Eurozone (2001)|38|999|both|0.8
+Remembers the drachma currency|32|999|both|0.9
+Lived through the Athens 2004 Olympics era|35|999|both|0.75
+Experienced the 2008-2015 Greek debt crisis|25|999|both|0.95
+Witnessed the Greek bailout programs|24|999|both|0.85
+Affected by austerity measures|24|55|both|0.7
+Experienced capital controls (2015)|24|999|both|0.8
+Witnessed the refugee crisis (2015-2016)|23|999|both|0.7
+Remembers high inflation before Euro|39|999|both|0.8
+Grew up with state-controlled television (pre-1989)|49|999|both|0.85
+Witnessed the Polytechnic uprising anniversary commemorations|21|999|both|0.6
+Experienced brain drain emigration|25|40|both|0.4
+Lived through youth unemployment crisis|25|38|both|0.5
+Remembers the Constantinople/Istanbul pogrom impact on family|72|999|both|0.15
+Has family connection to Asia Minor refugees (1920s)|55|999|both|0.25

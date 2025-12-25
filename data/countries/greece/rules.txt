@@ -1,4 +1,130 @@
 # --- Country status ---
-finished=false
+finished=true
 
+# --- Name rules ---
+name_order=first+surname1
+surname_count=1
+surname_usage=always
 
+# --- Date format ---
+date_format=DD/MM/YYYY
+
+# --- Age rules ---
+life_expectancy=81
+min_age=18
+max_age=81
+
+# --- Fertility rules ---
+# Female fertility limits (based on modern Greek social reality)
+# While biologically possible from 15, in modern Greece it's realistic from 18+
+female_fertility_min_age=18
+female_fertility_max_age=45
+# Parent age limits (to avoid unrealistic parent-child gaps)
+parent_min_age_gap=18
+parent_max_age_gap=45
+
+# --- Phone rules ---
+phone_country_code=+30
+phone_length=10
+phone_mobile_prefixes=69
+phone_format=### ### ####
+
+# --- Physical characteristics ---
+# Format: ColorName:Probability (probabilities should sum to 100)
+hair_colors=Black:40,Dark Brown:35,Brown:15,Light Brown:5,Dark Blonde:2,Blonde:1,Gray:0,White:0,Red:2
+eye_colors=Dark Brown:50,Brown:30,Hazel:10,Green:5,Light Brown:3,Blue:1.5,Gray:0.5
+skin_tones=Light:55,Medium:30,Olive:12,Tan:2.5,Dark:0.5
+
+# --- Religion ---
+# Format: Religion:Probability (based on Greek demographics)
+# Note: Greek Orthodox is dominant for traditional demographics
+religions=Greek Orthodox:90,Atheist:5,Agnostic:2,Muslim:2,Catholic:0.5,Other:0.5
+
+# --- Family configuration ---
+# Average number of children in Greece (used for realistic family generation)
+average_children=1.3
+min_children=1
+max_children=3
+
+# Siblings configuration (based on average_children)
+# In Greece, most people have at least 1 sibling (70% probability)
+average_siblings=1.8
+min_siblings=1
+max_siblings=4
+sibling_probability=70
+
+# --- Employment configuration ---
+# Unemployment and jobless probabilities
+unemployment_rate=12.5
+jobless_rate=2.0
+
+# --- Death Probability Configuration ---
+# Age-based death probabilities for family members (%)
+# Format: age_bucket:probability
+# Parents death probability (based on identity's age)
+# INCREASED for adults+ to reflect realistic parent ages
+death_prob_parents_very_young=2
+death_prob_parents_young_adults=5
+death_prob_parents_adults=30
+death_prob_parents_middle_aged=50
+death_prob_parents_older_adults=70
+death_prob_parents_seniors=85
+death_prob_parents_elderly=95
+
+# Children death probability (lower than parents)
+death_prob_children_very_young=1
+death_prob_children_young_adults=2
+death_prob_children_adults=3
+death_prob_children_middle_aged=4
+death_prob_children_older_adults=5
+death_prob_children_seniors=6
+death_prob_children_elderly=8
+
+# Siblings death probability (based on identity's age)
+death_prob_siblings_very_young=1
+death_prob_siblings_young_adults=3
+death_prob_siblings_adults=5
+death_prob_siblings_middle_aged=8
+death_prob_siblings_older_adults=15
+death_prob_siblings_seniors=25
+death_prob_siblings_elderly=40
+
+# --- Currency ---
+currency_symbol=€
+currency_code=EUR
+
+# --- Social Class Configuration ---
+# Format: ClassName:Probability (probabilities should sum to 100)
+# Based on Greek socioeconomic distribution
+social_classes=low:30,middle:45,upper-middle:20,high:5
+
+# Salary ranges per social class (annual, in euros)
+# Format: min,max
+salary_low=10000,18000
+salary_middle=18000,35000
+salary_upper-middle=35000,65000
+salary_high=65000,180000
+
+# Pension ranges per social class (annual, in euros)
+# Typically 60-80% of previous salary
+# Format: min,max
+pension_low=7000,14000
+pension_middle=13000,26000
+pension_upper-middle=25000,48000
+pension_high=45000,110000
+
+# --- Language Configuration ---
+# Minimum and maximum number of languages (including native)
+min_languages=1
+max_languages=4
+
+# Languages spoken in Greece and commonly taught
+# Format: Language:Probability
+# Native language (Greek) is always included automatically
+available_languages=English:75,French:25,German:20,Italian:15,Spanish:10,Turkish:5,Russian:8,Albanian:5,Bulgarian:3,Arabic:1
+
+# Language level probabilities
+# Format: Level:Probability (for non-native languages)
+language_level_basic=35
+language_level_intermediate=45
+language_level_advanced=20
