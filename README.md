@@ -100,6 +100,7 @@ False Identity Generator is a sophisticated Python-based system for creating rea
 - 🇬🇷 **Greece** - Fully implemented with Greek script and Orthodox cultural traditions
 - 🇻🇳 **Vietnam** - Fully implemented with age-based gender markers (Văn/Thị) and anti-pattern tracking
 - 🇮🇳 **India** - Fully implemented with romanized names and internationalized approach
+- 🇦🇷 **Argentina** - Fully implemented with European heritage names and regional cultural characteristics
 
 **Planned Countries:**
 - Additional countries in development
