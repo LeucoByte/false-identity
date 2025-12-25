@@ -952,7 +952,7 @@ class Identity:
                     if rel.get('start_date') and rel.get('end_date'):
                         end_time_ago = calculate_time_ago(rel['end_date'])
                         duration = rel.get('duration', 0)
-                        duration_text = f"{duration} years" if duration != 1 else "1 year"
+                        duration_text = f"{duration} years of duration" if duration != 1 else "1 year of duration"
                         family_block += pad_line("      Duration:   ", f"{rel['start_date']} - {rel['end_date']} {end_time_ago} ({duration_text})", WHITE, RESET) + "\n"
 
                     # Show breakup reason

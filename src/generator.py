@@ -486,13 +486,15 @@ class IdentityGenerator:
 
         return ''.join(result)
 
-    def _build_full_name(self, components: Dict[str, Any], name_order: List[str]) -> str:
+    def _build_full_name(self, components: Dict[str, Any], name_order: List[str], country: str = None, gender: str = None) -> str:
         """
         Build full name according to name_order rules.
 
         Args:
             components: Dict with 'first', 'surname1', 'surname2', etc.
             name_order: List like ['first', 'surname1', 'surname2']
+            country: Optional country code for special handling
+            gender: Optional gender for special handling
 
         Returns:
             Full name string
@@ -504,6 +506,27 @@ class IdentityGenerator:
             elif component == 'surname' and 'surname1' in components:
                 # Handle 'surname' -> 'surname1' mapping for single-surname countries
                 parts.append(components['surname1'])
+
+        # Vietnam: Add gender marker between surname and first name
+        if country and country.lower() == 'vietnam' and gender:
+            # Vietnamese name structure: Surname + Gender_Marker + Given_Name
+            # For females: Add "Thị" (traditional female marker)
+            # For males: Add "Văn" (common male marker), but also allow no marker or other markers
+
+            if len(parts) >= 2:
+                # parts[0] is surname, parts[1] is given name
+                surname = parts[0]
+                given_name = parts[1]
+
+                if gender.lower() == 'female':
+                    # Always add Thị for females (traditional)
+                    parts = [surname, 'Thị', given_name]
+                else:
+                    # For males: 70% chance of adding Văn, 30% no marker
+                    if random.random() < 0.7:
+                        parts = [surname, 'Văn', given_name]
+                    # else: keep as is (no middle name)
+
         return ' '.join(parts)
 
     def _filter_jobs_by_age(self, jobs: List[str], age: int, age_requirements: Dict[str, int]) -> List[str]:
@@ -3358,7 +3381,7 @@ class IdentityGenerator:
 
         # Build full name according to rules
         name_order = rules.get_name_order()
-        full_name = self._build_full_name(name_components, name_order)
+        full_name = self._build_full_name(name_components, name_order, country=country, gender=gender)
 
         # Generate physical characteristics
         height_cm, weight_kg, hair_color, eye_color, skin_tone = self._generate_physical_characteristics(
@@ -3462,6 +3485,18 @@ class IdentityGenerator:
             # Currently employed: generate current salary
             min_salary, max_salary = rules.get_salary_range(social_class)
             base_salary = random.randint(min_salary, max_salary)
+
+            # Apply age-based salary adjustment (younger workers earn less)
+            if age < 25:
+                # Very young workers: 50-70% of base range
+                base_salary = int(base_salary * random.uniform(0.50, 0.70))
+            elif age < 30:
+                # Young workers: 65-85% of base range
+                base_salary = int(base_salary * random.uniform(0.65, 0.85))
+            elif age < 40:
+                # Young-mid career: 80-100% of base range
+                base_salary = int(base_salary * random.uniform(0.80, 1.00))
+            # Ages 40+ get full range (no adjustment)
 
             # Round to nearest 50 or 100
             if base_salary < 30000:
