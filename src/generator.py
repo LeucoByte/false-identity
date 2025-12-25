@@ -432,6 +432,55 @@ class IdentityGenerator:
         else:
             return line, None, postal_code
 
+    def _adjust_india_surnames_for_religion(self, surnames: List[str], religion: str) -> List[str]:
+        """
+        Adjust Indian surnames to better match religion (probabilistic, not absolute).
+
+        This reduces obviously incompatible combinations like "Sikh + Khan" or "Muslim + Singh"
+        but doesn't eliminate them entirely (they can still occur ~20% of the time).
+
+        Args:
+            surnames: List of selected surnames
+            religion: Person's religion
+
+        Returns:
+            Adjusted list of surnames
+        """
+        # Define religion-specific surname pools
+        muslim_surnames = ['Khan', 'Ahmed', 'Ali', 'Hassan', 'Hussain', 'Sheikh', 'Malik']
+        sikh_surnames = ['Singh', 'Kaur']  # Kaur is female-specific but we don't have it in our list
+
+        # Surnames that are clearly NOT Muslim (strong Hindu/Sikh associations)
+        non_muslim_surnames = ['Singh', 'Sharma', 'Patel', 'Gupta', 'Verma', 'Joshi', 'Reddy']
+
+        # Surnames that are clearly NOT Sikh (Muslim/Hindu associations)
+        non_sikh_surnames = ['Khan', 'Ahmed', 'Ali', 'Iyer', 'Nair', 'Menon']
+
+        adjusted = []
+        for surname in surnames:
+            # 80% probability to fix incompatible combinations
+            should_adjust = random.random() < 0.80
+
+            if should_adjust:
+                if religion == 'Muslim' and surname in non_muslim_surnames:
+                    # Replace with Muslim surname
+                    adjusted.append(random.choice(muslim_surnames))
+                elif religion == 'Sikh' and surname in non_sikh_surnames:
+                    # Replace with Singh (main Sikh surname)
+                    adjusted.append('Singh')
+                elif religion == 'Hindu' and surname in muslim_surnames:
+                    # Replace with common Hindu surname
+                    hindu_surnames = ['Kumar', 'Sharma', 'Patel', 'Gupta', 'Verma', 'Rao']
+                    adjusted.append(random.choice(hindu_surnames))
+                else:
+                    # No conflict or other religion
+                    adjusted.append(surname)
+            else:
+                # 20% keep original (allows some mixing for realism)
+                adjusted.append(surname)
+
+        return adjusted
+
     def _generate_phone(self, rules: CountryRules) -> str:
         """
         Generate a phone number according to country rules.
@@ -3516,6 +3565,10 @@ class IdentityGenerator:
         else:
             # Younger people follow normal distribution
             religion = self._weighted_choice(religions)
+
+        # India: Adjust surnames to match religion (probabilistic, not absolute)
+        if country.lower() == 'india':
+            selected_surnames = self._adjust_india_surnames_for_religion(selected_surnames, religion)
 
         # Generate family information first to determine marital status and children for job generation
         family = self._generate_family(country, age, gender, selected_surnames, rules, social_class)

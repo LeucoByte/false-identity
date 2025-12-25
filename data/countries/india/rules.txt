@@ -7,6 +7,14 @@ name_order=first+surname
 date_format=DD/MM/YYYY
 currency=₹
 currency_name=Indian Rupee
+currency_symbol=₹
+currency_code=INR
+
+# Phone configuration
+phone_country_code=+91
+phone_length=10
+phone_mobile_prefixes=6,7,8,9
+phone_format=##### #####
 
 # Religions (simplified, no caste markers)
 religions=Hindu:75,Muslim:14,Christian:6,Sikh:2,None:3
