@@ -7,7 +7,7 @@
 # For "witnessed/experienced" events: need to be 14+ (teenager awareness)
 # For "remembers" events: need to be 7+ (childhood memories)
 
-Completed mandatory military service (conscription)|42|65|male|0.90
+Completed mandatory military service (conscription)|49|65|male|0.90
 Grew up during the military dictatorship (1976-1983)|56|999|both|1.0
 Witnessed the Falklands/Malvinas War (1982)|57|999|both|0.85
 Remembers hyperinflation of the late 1980s|50|999|both|0.85

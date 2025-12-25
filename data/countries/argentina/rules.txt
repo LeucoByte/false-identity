@@ -25,7 +25,7 @@ parent_max_age_gap=45
 # --- Phone rules ---
 phone_country_code=+54
 phone_length=10
-phone_mobile_prefixes=11,15,9
+phone_mobile_prefixes=11,351,341,261,221,223
 phone_format=## #### ####
 
 # --- Physical characteristics ---
@@ -82,7 +82,7 @@ death_prob_siblings_seniors=27
 death_prob_siblings_elderly=42
 
 # --- Currency ---
-currency_symbol=$
+currency_symbol=AR$
 currency_code=ARS
 currency_name=Argentine Peso
 
